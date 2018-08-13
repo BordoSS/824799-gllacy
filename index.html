@@ -5,48 +5,38 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
     <header class="main-header">
               <div class="top-container">
-                <p class="main-header-logo">
                   <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип GllacyShop">
-                </p>
-                <div class="navigation-container">
+                  <div class="navigation">
                   <nav class="main-navigation">
                     <ul class="site-navigation">
-                      <li class="catalog">
-                        <a class="header-link catalog-link" href="#">Каталог</a>
-                      </li>
+                      <li><a class="header-link" href="#">Каталог</a></li>
                       <li><a class="header-link" href="#">Доставка и оплата</a></li>
                       <li><a class="header-link" href="#">О Компании</a></li>
                     </ul>
                   </nav>
                   <div class="right-navigation-container">
-                                  <div class="search">
-                                    <a class="search-link right-navigation-link" href="#">
-                                      <span class="visually-hidden">Поиск</span>
-                                    </a>
-                                  </div>
-                                    <ul class="user-navigation">
-                                  <div class="user-navigation">
-                                    <a class="sign-in-link right-navigation-link" href="#">
-                                          Вход
-                                    </a>
-                                  </div>
+                      <div class="search">
+                      <a class="search-link right-navigation-link" href="#">
+                      <span class="visually-hidden">Поиск</span>
+                      </a>
+                      </div>
+                      <ul class="user-navigation">
+                          <div class="user-navigation">
+                            <a class="sign-in-link right-navigation-link" href="#">
+                            Вход</a>
+                          </div>
                   </div>
           <div class="bottom-container">
-            <ul class="breadcrumbs"></ul>
             <p class="info">
               <span class="info-schedule">С 10 до 20, ежедневно</span>
               <span class="info-number">8 812 450-25-25</span>
             </p>
           </div>
           <main class="container">
-
-          <h1>Магазин мороженого Глэйси</h1>
-
           <section class="slider">
-            <h2>Слайдер</h2>
+            <h2 class="visually-hidden">Слайдер</h2>
             <ul class="slider-list">
               <li class="slider-item slide slider-item-1" id="slide1">
                 <h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -55,7 +45,7 @@
             </ul>
         </section>
         <section class="shares">
-            <h2>Акции</h2>
+            <h2 class="visually-hidden">Акции</h2>
             <ul class="shares-list">
               <li class="shares-position shares-raspberries">
                 <h3>Малинка даром!</h3>
@@ -69,8 +59,8 @@
               </li>
             </ul>
           </section>
-          <section class="index-products hits">
-                     <h2>Хиты продаж</h2>
+          <section class="index-products">
+                     <h2 class="visually-hidden">Хиты продаж</h2>
                      <ul class="icecream-list">
                        <li class="icecream icecream-hit">
                          <h3> Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -105,7 +95,7 @@
                    </section>
 
                    <section class="about">
-            <h2>О нас</h2>
+            <h2 class="visually-hidden">О нас</h2>
             <h3>
               Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
               производства на развес
@@ -134,69 +124,56 @@
               </li>
             </ul>
           </section>
-          <div class="main-wrapper">
+          <section class="main-wrapper">
             <article class="blog">
               <h2 class="blog-header">Новое в нашем блоге</h2>
-              <h3 class="blog-state-header">
-                <a class="blog-state-link" href="">
-                10 способов сервировки
-                фруктовых щербетов к
-                столу
-                </a>
+              <h3>
+              <a class="blog-state-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
               </h3>
             </article>
                       <section class="dispatch">
-                          <div>
                             <h2>Подписка на рассылку</h2>
                             <p>
                               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
                               всего самого вкусного, что у нас происходит. Обещаем не спамить
                               и не слать всякой ненужной ерунды. Честно =)
                             </p>
-                          </div>
-                        </section>
-                      </div>
-          <section class="map">
-                      <h2>Карта</h2>
-                      <div>
-                        <img src="img/map.png" width="1200" height="430" alt="Карта">
-                      </div>
-                      <div class="feedback">
-                        <h3>Обратная связь</h3>
-                        <div>
-                          <p>
-                            Адрес главного офиса<br>
-                            и офлайн-магазина:<br>
-                            <span>
-                            ул. Большая Конюшенная
-                            19/8, Санкт-Петербург<br>
-                            </span>
-                          </p>
-                          <p>
-                            Для заказов по телефону:<br>
-                            <span>
-                            8 812 450-25-25
-                            </span><br>
-                            (с 10 до 20 ежедневно)
-                          </p>
-                        </div>
-                        <a class="button feedback-button">Форма обратной связи</a>
-                      </div>
-                    </section>
+                      </section>
+            </section>
     </main>
 
     <footer class="main-footer">
-          <div class="left-footer-container">
+      <section class="map">
+                  <h2>Карта</h2>
+                  <div class="map-input">
+                    <img src="img/map.png" width="1200" height="430" alt="Карта">
+                  </div>
+                  <div class="feedback">
+                    <h3>Обратная связь</h3>
+                    <div>
+                      <p>
+                        Адрес главного офиса и офлайн-магазина:
+                        <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                      </p>
+                      <p>
+                        Для заказов по телефону:
+                        <span>8 812 450-25-25</span>(с 10 до 20 ежедневно)
+                      </p>
+                    </div>
+                    <a class="button feedback-button" href="#">Форма обратной связи</a>
+                  </div>
+                </section>
+          <div class="left-footer">
             <div class="footer-social">
               <ul class="social-list">
                 <li>
                   <a class="social-button twitter" href="#">
-                    <span class="visually-hidden">Твиттер</span>
+                  <span class="visually-hidden">Твиттер</span>
                   </a>
                 </li>
                 <li>
                   <a class="social-button instagram" href="#">
-                    <span class="visually-hidden">Инстаграм</span>
+                  <span class="visually-hidden">Инстаграм</span>
                   </a>
                 </li>
                 <li>
