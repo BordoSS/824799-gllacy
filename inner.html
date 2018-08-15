@@ -14,9 +14,7 @@
 
       <header class="main-header">
         <div class="top-container">
-          <p class="main-header-logo">
             <a href="index.html"><img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип GllacyShop"></a>
-          </p>
           <div class="navigation-container">
             <nav class="main-navigation">
               <ul class="site-navigation">
@@ -34,22 +32,31 @@
               </ul>
             </nav>
             <div class="right-navigation-container">
-              <div class="search">
-                <a class="right-navigation-link search-link" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-                <div class="modal search-modal">
-                  <form class="form-style search-form" action="#" method="get">
-                    <label class="visually-hidden" for="search">Поиск</label>
-                    <input type="search" name="search" id="search" placeholder="Что ищем?">
-                  </form>
-                </div>
+              <div class="search"><a class="search-link right-navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
               </div>
-              <ul class="user-navigation">
-                <li>
-                  <a class="right-navigation-link sign-in-link" href="#">Вход</a>
-                </li>
-              </ul>
+              <div class="signin-rollover popdown row">
+                  <div class="inner">
+                    <div class="signin-rollover-login">
+                      <fieldset class="fieldset">
+                        <legend class="legend sub-sub-heading light">Вход</legend>
+                          <form class="theLoginForm">
+                              <div class="inputwrapper required">
+                                  <label class="label" for="txt-signin-rollover-email">Электронная почта</label>
+                              </div>
+                              <div class="inputwrapper required">
+                                  <label class="label" for="txt-signin-rollover-password">Пароль:</label>
+                              </div>
+                                  <div class="inputwrapper">
+                                    <p><a href="#" class="forgot-password underline">Забыли пароль?</a></p>
+                                    <p><a href="#" class="new register">Новая регистрация</a></p>
+                                    <input class="large fluid button" type="submit" value="Войти">
+                                  </div>
+                          </form>
+                        </fieldset>
+                      </div>
+                  </div>
+              </div>
+            </div>
               <div class="basket">
                 <a class="right-navigation-link basket-link basket-full" href="#">2 товара</a>
                 <div class="modal basket-list">
@@ -101,7 +108,11 @@
       </header>
 
       <main class="container">
-
+        <ul class="breadcrumbs">
+            <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+            <li><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
+            <li>Сливочное</li>
+        </ul>
         <h1 class="big-header">Сливочное мороженое</h1>
 
         <section class="filters">
@@ -111,10 +122,10 @@
             <fieldset class="form-sort">
               <legend>Сортировка:</legend>
               <select class="filter-style" name="sort" id="sort">
-                <option selected>по популярности</option>
-                <option>сначала недорогие</option>
-                <option>сначала дорогие</option>
-                <option>по жирности</option>
+                <option value="по популярности">по популярности</option>
+                <option value="сначала недорогие">сначала недорогие</option>
+                <option value="сначала дорогие">сначала дорогие</option>
+                <option value="по жирности">по жирности</option>
               </select>
             </fieldset>
 
@@ -125,10 +136,10 @@
             <fieldset class="form-fat">
               <legend>Жирность:</legend>
               <div class="filter-style filter-fat">
-                <label class="fat-label fat-0"><span class="radio-indicator" ></span>0%</label>
-                <label class="fat-label fat-10"><span class="radio-indicator"></span>до 10%</label>
-                <label class="fat-label fat-30"><span class="radio-indicator"></span>до 30%</label>
-                <label class="fat-label fat-over-30"><span class="radio-indicator"></span>выше 30%</label>
+                <label class="fat-label fat-0"><input type="radio-indicator" >0%<<Br>
+                <label class="fat-label fat-10"><input type="radio-indicator"><до 10%<Br>
+                <label class="fat-label fat-30"><input type="radio-indicator">до 30%<Br>
+                <label class="fat-label fat-over-30"><input type="radio-indicator">выше 30%<Br>
               </div>
             </fieldset>
 
@@ -136,24 +147,19 @@
               <legend>Наполнители:</legend>
               <div class="filter-style filter-fillers">
                 <label class="filler-label choco">
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="choco" id="choco" checked>
-                  <span class="checkbox-indicator"></span>шоколадные
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="choco" id="choco" checked> шоколадные
                 </label>
                 <label class="filler-label sugar">
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="sugar" id="sugar" checked>
-                  <span class="checkbox-indicator"></span>сахарные присыпки
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="sugar" id="sugar" checked> сахарные присыпки
                 </label>
                 <label class="filler-label frut">
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="frut" id="frut">
-                  <span class="checkbox-indicator"></span>фрукты
+                  <input class="filler-checkbox" type="checkbox" name="frut" id="frut">фрукты
                 </label>
                 <label class="filler-label syrup">
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="syrup" id="syrup">
-                  <span class="checkbox-indicator"></span>сиропы
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="syrup" id="syrup">сиропы
                 </label>
                 <label class="filler-label jam">
-                  <input class="visually-hidden filler-checkbox" type="checkbox" name="jam" id="jam">
-                  <span class="checkbox-indicator"></span>джемы
+                  <input class="visually-hidden filler-checkbox" type="checkbox" name="jam" id="jam">джемы
                 </label>
               </div>
             </fieldset>
@@ -163,7 +169,8 @@
 
         <section class="products">
           <h2 class="visually-hidden">Список товаров</h2>
-          <ul class="icecream-list icecream-catalog-list">
+          <ul class="icecream-list">
+
             <li class="icecream">
               <h3 class="icecream-name"><a href="#" class="icecream-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
               <div class="icecream-container">
@@ -273,10 +280,10 @@
             </li>
           </ul>
 
-          <div class="pagination-wrapper">
+          <div>
             <ul class="pagination-list">
               <li><a class="pagination-button back"><span class="visually-hidden">Назад</span></a></li>
-              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item pagination-item-current"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item"><a href="#">4</a></li>
