@@ -42,9 +42,11 @@
                           <form class="theLoginForm">
                               <div class="inputwrapper required">
                                   <label class="label" for="txt-signin-rollover-email">Электронная почта</label>
+                                  <input class="label" type="text" name="email" placeholder="Электронная почта">
                               </div>
                               <div class="inputwrapper required">
-                                  <label class="label" for="txt-signin-rollover-password">Пароль:</label>
+                                  <label class="label" for="txt-signin-rollover-password">Пароль</label>
+                                  <input class="label" type="password" name="password" placeholder="Пароль">
                               </div>
                                   <div class="inputwrapper">
                                     <p><a href="#" class="forgot-password underline">Забыли пароль?</a></p>
@@ -116,8 +118,10 @@
         <h1 class="big-header">Сливочное мороженое</h1>
 
         <section class="filters">
+
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filters-form" action="#" method="get">
+
+          <form class="filters-form"  method="get" action="#">
 
             <fieldset class="form-sort">
               <legend>Сортировка:</legend>
@@ -136,10 +140,14 @@
             <fieldset class="form-fat">
               <legend>Жирность:</legend>
               <div class="filter-style filter-fat">
-                <label class="fat-label fat-0"><input type="radio-indicator" >0%<<Br>
-                <label class="fat-label fat-10"><input type="radio-indicator"><до 10%<Br>
-                <label class="fat-label fat-30"><input type="radio-indicator">до 30%<Br>
-                <label class="fat-label fat-over-30"><input type="radio-indicator">выше 30%<Br>
+                    <label for="fat-label-0"> 0% <input type="radio" name="fat-label" value="label-0" id="fat-label-0">
+                    </label>
+                    <label for="fat-label-10"> 10% <input type="radio" name="fat-label" value="label-10" id="fat-label-10">
+                    </label>
+                    <label for="fat-label-30"> 30% <input type="radio" name="fat-label" value="label-30" id="fat-label-30">
+                    </label>
+                    <label for="fat-label-over-30"> выше 30% <input type="radio" name="fat-label" value="label-over-30" id="fat-label-over-30">
+                    </label>
               </div>
             </fieldset>
 
@@ -199,11 +207,11 @@
             </li>
 
             <li class="icecream">
-              <h3 class="icecream-name"><a href="#" class="icecream-link">Сливочное крем-брюле с карамельной подливкой</a></h3>
-              <div class="icecream-container">
-                <img src="img/product-04.jpg" width="267" height="267" alt="product-04">
-                <p class="price">415<span class="kg">/кг</span></p>
-              </div>
+              <h3> Сливочное крем-брюле с карамельной подливкой</h3>
+                  <div class="icecream-container hit-container">
+                    <img src="img/product-04.jpg" width="267" height="267" alt="product-04">
+                    <p>415<span>/кг</span></p>
+                  </div>
               <a href="#" class="button send-button">Быстрый просмотр</a>
             </li>
 
