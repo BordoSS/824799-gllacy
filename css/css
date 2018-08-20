@@ -1,0 +1,19 @@
+.about-paragraph about-cow::before {
+   background-image: url(img/cow.svg) 49px 49px;
+   background-repeat: no-repeat;
+}
+
+.about-paragraph about-icecream::before {
+   background-image: url(img/ice-cream.svg) 49px 49px;
+   background-repeat: no-repeat;
+}
+
+.about-paragraph about-eco::before {
+   background-image: url(eco/leaf.svg) 49px 49px;
+   background-repeat: no-repeat;
+}
+
+.about-paragraph about-thermometer::before {
+   background-image: url(eco/thermometer.svg) 49px 49px;
+   background-repeat: no-repeat;
+}
