@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
               <div class="top-container">
-                  <img src="img/._logo.svg" width="154" height="64" alt="Логотип GllacyShop">
+                  <img src="img/svg/._logo.svg" width="154" height="64" alt="Логотип GllacyShop">
                   <div class="navigation">
                   <nav class="main-navigation">
                     <ul class="site-navigation">
@@ -27,7 +27,8 @@
                   </nav>
                   <div class="right-navigation-container">
                       <div class="search">
-                      <a class="search-link right-navigation-link" href="#">
+                      <a class="search-link right-navigation-link search-link-hover" href="#">
+                      ::before
                       <span class="visually-hidden">Поиск</span>
                       </a>
                       </div>
@@ -56,6 +57,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="basket">
+                          <a class="right-navigation-link basket-link basket-empty" href="#">
+                          ::before
+                          Пусто
+                          </a>
+                        </div>
                   </div>
           <div class="bottom-container">
             <p class="info">
@@ -69,7 +76,9 @@
             <h2 class="visually-hidden">Слайдер</h2>
             <ul class="slider-list">
               <li class="slider-item slide slider-item-1" id="slide1">
-                <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+                <button type="button">
+                  <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+                </button>
                 <a class="button slider-button" href="#">Давайте оба!</a>
               </li>
             </ul>

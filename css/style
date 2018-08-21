@@ -1,19 +1,100 @@
 .about-paragraph about-cow::before {
-   background-image: url(img/._cow.svg) 49px 49px;
+   background-image: url(img/svg/._cow.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 .about-paragraph about-icecream::before {
-   background-image: url(img/._ice-cream.svg) 49px 49px;
+   background-image: url(img/svg/._ice-cream.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 .about-paragraph about-eco::before {
-   background-image: url(img//_leaf.svg) 49px 49px;
+   background-image: url(img/svg/_leaf.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 .about-paragraph about-thermometer::before {
-   background-image: url(eco/._thermometer.svg) 49px 49px;
+   background-image: url(img/svg/._thermometer.svg) 49px 49px;
    background-repeat: no-repeat;
+}
+
+a .search-link right-navigation-link search-link-hover ::before {
+background-image: url(img/svg/._loupe.svg) 17px 17px;
+}
+
+a .right-navigation-link basket-link basket-empty ::before {
+background-image: url(img/svg/._basket.svg) 21px 20px;
+}
+
+.slider-item slide slider-item-1 {
+background: url(img/png/background1.png);
+}
+
+.shares-position {
+    position: relative;
+    box-sizing: border-box;
+    width: 560px;
+    margin-bottom: 26px;
+    padding: 16px 19px 68px;
+    border-radius: 15px;
+}
+.shares-raspberries {
+    background-color: #78172c;
+    background-image: url(img/png/raspberry-background.png);
+    background-repeat: no-repeat;
+    background-position: -50px -94px;
+}
+
+.shares-chocolate {
+    background-color: #462b1f;
+    background-image: url(img/png/chocolate-background.png);
+    background-position: -218px -104px;
+    background-repeat: no-repeat;
+}
+
+.icecream img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+img {
+    border-style: none;
+}
+
+.about {
+    margin: 0 0 40px;
+    padding: 24px 21px 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    background-color: #ebdfc5;
+    background-image: url(img/png/waffle-background.png);
+    border-radius: 15px;
+}
+
+.blog {
+    box-sizing: border-box;
+    width: 560px;
+    padding: 23px 20px 81px;
+    background-color: #fff;
+    background-image: url(img/png/strawberry-background.png);
+    background-repeat: no-repeat;
+    background-position: -52px -224px;
+    border-radius: 15px;
+}
+
+.dispatch {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #5a5a5a;
+    background-image: url(img/png/dispatch-background.png);
+    background-repeat: no-repeat;
+    width: 560px;
+    padding: 5px;
 }
