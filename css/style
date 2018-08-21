@@ -1,33 +1,33 @@
 .about-paragraph about-cow::before {
-   background-image: url(img/svg/._cow.svg) 49px 49px;
+   background-image: url(svg/._cow.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 .about-paragraph about-icecream::before {
-   background-image: url(img/svg/._ice-cream.svg) 49px 49px;
+   background-image: url(svg/._ice-cream.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 .about-paragraph about-eco::before {
-   background-image: url(img/svg/_leaf.svg) 49px 49px;
+   background-image: url(svg/_leaf.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 .about-paragraph about-thermometer::before {
-   background-image: url(img/svg/._thermometer.svg) 49px 49px;
+   background-image: url(svg/._thermometer.svg) 49px 49px;
    background-repeat: no-repeat;
 }
 
 a .search-link right-navigation-link search-link-hover ::before {
-background-image: url(img/svg/._loupe.svg) 17px 17px;
+background-image: url(svg/._loupe.svg) 17px 17px;
 }
 
 a .right-navigation-link basket-link basket-empty ::before {
-background-image: url(img/svg/._basket.svg) 21px 20px;
+background-image: url(svg/._basket.svg) 21px 20px;
 }
 
 .slider-item slide slider-item-1 {
-background: url(img/png/background1.png);
+background: url(png/background1.png);
 }
 
 .shares-position {
@@ -40,14 +40,14 @@ background: url(img/png/background1.png);
 }
 .shares-raspberries {
     background-color: #78172c;
-    background-image: url(img/png/raspberry-background.png);
+    background-image: url(png/raspberry-background.png);
     background-repeat: no-repeat;
     background-position: -50px -94px;
 }
 
 .shares-chocolate {
     background-color: #462b1f;
-    background-image: url(img/png/chocolate-background.png);
+    background-image: url(png/chocolate-background.png);
     background-position: -218px -104px;
     background-repeat: no-repeat;
 }
@@ -71,7 +71,7 @@ img {
     line-height: 22px;
     color: #323232;
     background-color: #ebdfc5;
-    background-image: url(img/png/waffle-background.png);
+    background-image: url(png/waffle-background.png);
     border-radius: 15px;
 }
 
@@ -80,7 +80,7 @@ img {
     width: 560px;
     padding: 23px 20px 81px;
     background-color: #fff;
-    background-image: url(img/png/strawberry-background.png);
+    background-image: url(png/strawberry-background.png);
     background-repeat: no-repeat;
     background-position: -52px -224px;
     border-radius: 15px;
@@ -93,7 +93,7 @@ img {
     font-weight: 400;
     line-height: 22px;
     color: #5a5a5a;
-    background-image: url(img/png/dispatch-background.png);
+    background-image: url(png/dispatch-background.png);
     background-repeat: no-repeat;
     width: 560px;
     padding: 5px;
