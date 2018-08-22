@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/style" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
               <div class="top-container">
-                  <img src="img/svg/._logo.svg" width="154" height="64" alt="Логотип GllacyShop">
+                  <img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
                   <div class="navigation">
                   <nav class="main-navigation">
                     <ul class="site-navigation">
@@ -72,27 +72,40 @@
                       </ul>
           <main class="container">
           <section class="slider">
+
             <h2 class="visually-hidden">Слайдер</h2>
+
+            <!-- Список радиокнопок-->
+            <div id="slider" class="slider-list">
+              <input class="visually-hidden slider-radio-1" type="radio" id="product-1" name="toggle" checked>
+              <input class="visually-hidden slider-radio-2" type="radio" id="product-2" name="toggle">
+              <input class="visually-hidden slider-radio-3" type="radio" id="product-3" name="toggle">
+            </div>
+
+            <!-- Список слайдов-->
+            
+              <div class="slider-controls">
+                  <label class="slider-label-1" for="product-1">Первый</label>
+                  <label class="slider-label-2" for="product-2">Второй</label>
+                  <label class="slider-label-3" for="product-3">Третий</label>
+              </div>
+
+
             <ul class="slider-list">
               <li class="slider-item slide slider-item-1" id="slide1">
-                <button type="button">
-                  <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+                <h3>Крем-брюле и пломбир с малиновым джемом</h3>
                   <a class="button slider-button" href="#">Давайте оба!</a>
-                </button>
-              </li>
+                </li>
               <li class="slider-item slide slider-item-1" id="slide2">
-                <button type="button">
-                  <h3>Шоколадный пломбир и лимонный сорбет</h3>
+                <h3>Шоколадный пломбир и лимонный сорбет</h3>
                   <a class="button slider-button" href="#">Давайте оба!</a>
-                </button>
-              </li>
+                </li>
               <li class="slider-item slide slider-item-1" id="slide3">
-                <button type="button">
-                  <h3>Пломбир с помадкой и клубничный щербет</h3>
+                <h3>Пломбир с помадкой и клубничный щербет</h3>
                   <a class="button slider-button" href="#">Давайте оба!</a>
-                </button>
               </li>
             </ul>
+          </div>
         </section>
         <section class="shares">
             <h2 class="visually-hidden">Акции</h2>
@@ -153,25 +166,22 @@
             </h3>
             <ul class="about-list">
               <li class="about-paragraph about-icecream">
-                <::before>Все наше мороженое изготавливается на собственном
+                Все наше мороженое изготавливается на собственном
                 производстве, с использованием современного оборудования
-                и проверенных временем технологий.</::before>
+                и проверенных временем технологий.
               </li>
               <li class="about-paragraph about-cow">
-                <::before>
                 Закупка ингредиентов  производится только у проверенных
                 фермерских хозяйств и компаний, с которыми нас связывает
-                долговременное сотрудничество.</::before>
+                долговременное сотрудничество.
               </li>
               <li class="about-paragraph about-eco">
-                <::before></::before>
                 Для приготовления мороженого используются настоящие
                 сливки и молоко высочайшего качества. Все дополнительные
                 ингредиенты и добавки произведены из натурального,
                 экологически чистого сырья.
               </li>
               <li class="about-paragraph about-thermometer">
-                <::before></::before>
                 Доставка нашего мороженого до заказчиков осуществляется
                 в специальном термопаке, который не дает мороженому
                 растаять в пути и позволяет сохранить превосходный вкус.
@@ -197,12 +207,12 @@
     </main>
 
     <footer class="main-footer">
-      <section class="map">
+      <section class="map"><h2>Карта</h2>
+      <div class="map-input">
+        <img src="img/map.png" width="1200" height="430" alt="Карта">
+      </div>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBa0J0CATD" width="1200" height="428"></iframe>
-                  <h2>Карта</h2>
-                  <div class="map-input">
-                    <img src="img/map.png" width="1200" height="430" alt="Карта">
-                  </div>
+
                   <div class="feedback">
                     <h3>Обратная связь</h3>
                     <div>
