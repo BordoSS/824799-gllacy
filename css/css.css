@@ -76,7 +76,6 @@ img {
     box-sizing: border-box;
     width: 560px;
     padding: 23px 20px 81px;
-    background-color: #fff;
     background-image: url(img/strawberry-background.png);
     background-repeat: no-repeat;
     background-position: -52px -224px;
@@ -89,28 +88,15 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    color: #5a5a5a;
     background-image: url(img/dispatch-background.png);
     background-repeat: no-repeat;
     width: 560px;
     padding: 5px;
 }
 
-.slider-radio-1 {
-background-image: url(img/radio-off.svg);
-}
-.slider-radio-1:checked {
+.radio {
 background-image: url(img/radio-on.svg);
 }
-.slider-radio-2 {
+.radio:checked {
 background-image: url(img/radio-off.svg);
-}
-.slider-radio-2:checked {
-background-image: url(img/radio-on.svg);
-}
-.slider-radio-3 {
-background-image: url(img/radio-off.svg);
-}
-.slider-radio-3:checked {
-background-image: url(img/radio-on.svg);
 }
