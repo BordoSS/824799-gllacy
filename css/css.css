@@ -1,21 +1,17 @@
 .about-paragraph about-cow::before {
-   background-image: url(img/cow.svg) 49px 49px;
-   background-repeat: no-repeat;
+   background: url(img/cow.svg) 49px 49px no-repeat;
 }
 
 .about-paragraph about-icecream::before {
-   background-image: url(img/ice-cream.svg) 49px 49px;
-   background-repeat: no-repeat;
+   background-image: url(img/ice-cream.svg) 49px 49px no-repeat;
 }
 
 .about-paragraph about-eco::before {
-   background-image: url(img/leaf.svg) 49px 49px;
-   background-repeat: no-repeat;
+   background: url(img/leaf.svg) 49px 49px  no-repeat;
 }
 
 .about-paragraph about-thermometer::before {
-   background-image: url(img/thermometer.svg) 49px 49px;
-   background-repeat: no-repeat;
+   background: url(img/thermometer.svg) 49px 49px no-repeat;
 }
 
 a .search-link right-navigation-link search-link-hover ::before {
