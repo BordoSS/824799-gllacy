@@ -1,3 +1,19 @@
+.slider-radio-1:checked .site-wrapper {
+    background-image: url(../img/icecream-slider-1.png) no-repeat;
+    background-color: ##849d8f;
+  }
+
+.slider-radio-2:checked .site-wrapper {
+    background-image: url(../img/icecream-slider-2.png) no-repeat;
+    background-color: #8996a6;
+}
+
+.slider-radio-3:checked .site-wrapper {
+    background-image: url(../img/icecream-slider-3.png) no-repeat;
+    background-color: #9d8b84;
+
+}
+
 .about-paragraph about-cow::before {
    background: url(../img/cow.svg) 49px 49px no-repeat;
 }
