@@ -1,25 +1,25 @@
 .about-paragraph about-cow::before {
-   background: url(img/cow.svg) 49px 49px no-repeat;
+   background: url(../img/cow.svg) 49px 49px no-repeat;
 }
 
 .about-paragraph about-icecream::before {
-   background-image: url(img/ice-cream.svg) 49px 49px no-repeat;
+   background-image: url(../img/ice-cream.svg) 49px 49px no-repeat;
 }
 
 .about-paragraph about-eco::before {
-   background: url(img/leaf.svg) 49px 49px  no-repeat;
+   background: url(../img/leaf.svg) 49px 49px  no-repeat;
 }
 
 .about-paragraph about-thermometer::before {
-   background: url(img/thermometer.svg) 49px 49px no-repeat;
+   background: url(../img/thermometer.svg) 49px 49px no-repeat;
 }
 
 a .search-link right-navigation-link search-link-hover ::before {
-background-image: url(img/loupe.svg) 17px 17px;
+background-image: url(../img/loupe.svg) 17px 17px;
 }
 
 a .right-navigation-link basket-link basket-empty ::before {
-background-image: url(img/basket.svg) 21px 20px;
+background-image: url(../img/basket.svg) 21px 20px;
 }
 
 
@@ -33,14 +33,14 @@ background-image: url(img/basket.svg) 21px 20px;
 }
 .shares-raspberries {
     background-color: #78172c;
-    background-image: url(img/raspberry-background.png);
+    background-image: url(../img/raspberry-background.png);
     background-repeat: no-repeat;
     background-position: -50px -94px;
 }
 
 .shares-chocolate {
     background-color: #462b1f;
-    background-image: url(img/chocolate-background.png);
+    background-image: url(../img/chocolate-background.png);
     background-position: -218px -104px;
     background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ img {
     line-height: 22px;
     color: #323232;
     background-color: #ebdfc5;
-    background-image: url(img/waffle-background.png);
+    background-image: url(../img/waffle-background.png);
     border-radius: 15px;
 }
 
@@ -72,7 +72,7 @@ img {
     box-sizing: border-box;
     width: 560px;
     padding: 23px 20px 81px;
-    background-image: url(img/strawberry-background.png);
+    background-image: url(../img/strawberry-background.png);
     background-repeat: no-repeat;
     background-position: -52px -224px;
     border-radius: 15px;
@@ -84,15 +84,15 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    background-image: url(img/dispatch-background.png);
+    background-image: url(../img/dispatch-background.png);
     background-repeat: no-repeat;
     width: 560px;
     padding: 5px;
 }
 
 .radio {
-background-image: url(img/radio-on.svg);
+background-image: url(../img/radio-on.svg);
 }
 .radio:checked {
-background-image: url(img/radio-off.svg);
+background-image: url(../img/radio-off.svg);
 }
