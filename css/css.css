@@ -1,3 +1,41 @@
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+html {
+   box-sizing: border-box;
+}
+
+content-box-component {
+   box-sizing: content-box;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    min-height: 1200px;
+    background-color: #849d8f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 35px;
+    line-height: 41px;
+    color: #ffffff;
+    font-weight: bold;
+}
+h2 {
+    font-family: Roboto;
+    font-size: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 35px 235px;
+}
+
 .slider-radio-1:checked .site-wrapper {
     background-image: url(../img/icecream-slider-1.png) no-repeat;
     background-color: ##849d8f;
@@ -48,6 +86,8 @@ background-image: url(../img/basket.svg) 21px 20px;
     border-radius: 15px;
 }
 .shares-raspberries {
+    margin: 0 0 20px;
+    padding: 15px 20px 23px;
     background-color: #78172c;
     background-image: url(../img/raspberry-background.png);
     background-repeat: no-repeat;
