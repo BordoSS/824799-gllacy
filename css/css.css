@@ -9,14 +9,18 @@ content-box-component {
    box-sizing: content-box;
 }
 
+html,
 body {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    min-height: 1200px;
-    background-color: #849d8f;
-    color: #ffffff;
-    font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  min-width: 900px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #849d8f;
 }
 
 h1 {
