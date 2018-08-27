@@ -11,6 +11,7 @@ content-box-component {
 
 html,
 body {
+
   margin: 0px;
   padding: 0px;
   min-width: 900px;
@@ -40,16 +41,146 @@ h2 {
     margin: 35px 235px;
 }
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
+.visually-hidden:not(:focus) :not(:active) {
+  position: absolute;
+  width: 1px;
   height: 1px;
   margin: -1px;
-  overflow: hidden;
+  border: 0;
   padding: 0;
-  position: absolute;
+
   white-space: nowrap;
-  width: 1px;
+
+  clip-path: inset(100%);
+  clip: rect (0 0 0 0);
+  overflow: hidden;
+
+}
+
+
+.header-right-top {
+    font-size: 0;
+    position: relative;
+    float: right;
+    width: 269px;
+    margin: 17px -11px 0 0;
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    vertical-align: top;
+}
+
+.field {
+    display: block;
+    padding: 16px;
+    border-radius: 16px;
+    background: url(../img/loupe.svg) no-repeat 50% 50%;
+    background-color: rgba(255,255,255,.2);
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    vertical-align: top;
+}
+
+.login-icon {
+    padding-bottom: 6px;
+}
+
+.entry {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    box-sizing: border-box;
+    width: 92px;
+    height: 32px;
+    margin-left: 10px;
+    padding: 8px 20px 8px 44px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,.2);
+}
+
+.entry::before {
+    content: "";
+
+    position: absolute;
+
+    background-image: url(../img/entry.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.login-modal {
+    position: absolute;
+    z-index: 5;
+    top: 35px;
+    right: -2px;
+    display: none;
+    background-color: #f8f7f4;
+    box-shadow: 2px 10px 20px 3px #505f57;
+    width: 276px;
+    height: 213px;
+    padding: 20px 19px;
+}
+
+.basket {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    border-radius: 15px;
+}
+
+.basket-field-on {
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    min-width: 118px;
+    height: 32px;
+    padding: 8px 20px 8px 44px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,.2);
+}
+
+.header-right-bottom {
+    z-index: 5;
+    top: 48px;
+    right: 10px;
+}
+
+.header-right-bottom, .header-right-bottom-2 {
+    position: absolute;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.header-right-bottom span, .header-right-bottom-2 span {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    display: block;
+    color: #fff;
+}
+
+img {
+max-width: 100%;
+height: auto;
+
 }
 
 /* Слайдер */
@@ -111,9 +242,26 @@ h2 {
     background-color: transparent;
 }
 
+.slide1{
+  position: relative;
+  z-index: 1;
+}
+
+.slide2{
+  position: relative;
+  z-index: 2;
+}
+
+.slide3{
+  position: relative;
+  z-index: 3;
+}
+
+
 
 /* Акции */
 .stock {
+    flex-wrap: wrap;
     margin-bottom: 30px;
     color: #fff;
 }
@@ -175,6 +323,8 @@ h2 {
 /* Хиты продаж */
 
 .container {
+    display:flex;
+    flex-wrap: wrap;
     width: 100%;
     min-width: 900px;
     max-width: 1200px;
@@ -380,6 +530,19 @@ h2 {
 
 .post a {
     color: #323232;
+}
+
+.container-right {
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    width: 560px;
+    min-height: 220px;
+    margin-right: 2.3%;
+    padding-left: 20px;
+    color: #5a5a5a;
+    border-radius: 15px;
+    background: url(../img/dispatch-background.png);
 }
 
 .container-right-layer {
