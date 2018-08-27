@@ -177,16 +177,15 @@
 
   <!--Фильтры - цена-->
                     <div class="filter__col"> <h3 class="filter__heading">Цена: 100 руб. – 500 руб.</h3>
-                      <div class="filter__range range">
-                        <div class="range__field">
-                          <div class="range__track">
-                            <div class="range__track range__track--value"></div>
-                            <button class="range__btn range__btn--from" type="button"> <span class="visually-hidden">Значение от</span> </button>
-                            <button class="range__btn range__btn--to" type="button"> <span class="visually-hidden">Значение до</span>
-                            </button>
+                      От <input type="text" name="min-price" value="100" pattern="[0-9]*">
+                      до <input type="text" name="max-price" value="500" pattern="[0-9]*">
+                          <div class="filter-form__price-control">
+                            <div class="filter-form__range-scale">
+                              <div class="filter-form__range-bar"></div>
+                            </div>
+                            <div class="filter-form__range-toggle  filter-form__range-toggle--min"></div>
+                            <div class="filter-form__range-toggle  filter-form__range-toggle--max"></div>
                           </div>
-                        </div>
-                      </div>
                     </div>
 
 <!--Фильтры - жирность-->

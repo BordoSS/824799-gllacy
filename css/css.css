@@ -51,3 +51,103 @@ h2 {
   white-space: nowrap;
   width: 1px;
 }
+
+/* Слайдер */
+
+.hero {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hero__glow {
+  position: absolute;
+  width: 90%;
+  height: 150%;
+  top: -27%;
+  left: 5%;
+  background: radial-gradient(farthest-side, rgba(white, 0.75) 30%, rgba(white, 0) 100%);
+}
+
+.hero__slider {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.hero__slider--visible {
+  display: flex;
+}
+
+.hero__info {
+  order: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -276px;
+  z-index: 2;
+}
+
+.hero__heading {
+  margin: 0 auto 31px;
+  font-size: $font-size-giant-heading;
+  line-height: $line-height-giant-heading;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.hero__btn {
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+}
+
+.hero__image {
+  position: relative;
+}
+
+.hero__image--closer {
+  z-index: 1;
+  left: 10px;
+  height: 584px; // Защита от плясания слайдера
+}
+
+.hero__image--farther {
+  left: -45px;
+  top: 10px;
+}
+
+.hero__toggles {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+}
+
+.hero__toggle {
+  width: 21px;
+  height: 21px;
+  margin-right: 5px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color $fast-transition;
+}
+
+.hero__toggle--current {
+  background-color: white;
+}
+
+.hero__toggle:not(.hero__toggle--current):hover,
+.hero__toggle:not(.hero__toggle--current):focus {
+  background-color: rgba(white, 0.3);
+}
