@@ -134,11 +134,18 @@ h2 {
     margin-right: 2.2%;
     margin-left: 2.3%;
     background: #79092b url(../img/raspberry-background.png);
+    background-position: -50px -94px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .stock-right {
     position: relative;
     background: #79092b url(../img/chocolate-background.png);
+    background-position: -218px -104px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -218px -104px;
 }
 
 .btn-stock {
