@@ -93,8 +93,8 @@ h2 {
 
 .hero__heading {
   margin: 0 auto 31px;
-  font-size: $font-size-giant-heading;
-  line-height: $line-height-giant-heading;
+  font-size: 60px;
+  line-height: 41px;
   font-weight: 700;
   text-align: center;
   color: white;
@@ -117,7 +117,7 @@ h2 {
 .hero__image--closer {
   z-index: 1;
   left: 10px;
-  height: 584px; // Защита от плясания слайдера
+  height: 584px;
 }
 
 .hero__image--farther {
@@ -139,8 +139,6 @@ h2 {
   border: 2px solid white;
   border-radius: 50%;
   background-color: transparent;
-  cursor: pointer;
-  transition: background-color $fast-transition;
 }
 
 .hero__toggle--current {
