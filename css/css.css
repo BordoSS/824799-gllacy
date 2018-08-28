@@ -57,8 +57,96 @@ h2 {
 
 }
 
+/* шапка -----------------------------------------------------------------------------------------------------*/
 
+.main-header {
+    display: block;
+    margin: 0 2.3%;
+    padding-top: 7px;
+}
+
+
+
+/* шапка-слева -----------------------------------------------------------------------------------------------------*/
+
+.index-logo {
+    float: left;
+    width: 152px;
+    margin-top: 2px;
+    margin-left: -3px;
+}
+
+.header-left {
+    float: left;
+    width: 400px;
+    margin-top: 15px;
+    margin-left: 16px;
+}
+
+.main-menu, .sub-menu {
+    display: block;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu>li {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 7px;
+}
+
+.breadcrumbs li, .main-menu>li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-item {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 14px;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* шапка-каталог */
+a {
+    background-color: transparent;
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    display: none;
+    box-sizing: border-box;
+    width: 140px;
+    min-height: 171px;
+    border-radius: 5px;
+    background-color: #f8f7f4;
+    box-shadow: 5px 15px 15px 5px #58665e;
+}
+
+/* шапка-каталог-выпадающий список */
+.sub-menu li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.sub-menu li {
+    display: inline-block;
+    width: 140px;
+    vertical-align: middle;
+}
+
+
+/* шапка-справа -----------------------------------------------------------------------------------------------------*/
 .header-right-top {
+    display: block;
     font-size: 0;
     position: relative;
     float: right;
@@ -66,6 +154,9 @@ h2 {
     margin: 17px -11px 0 0;
 }
 
+
+
+/* шапка-поиск*/
 .search {
     position: relative;
     display: inline-block;
@@ -80,6 +171,9 @@ h2 {
     background: url(../img/loupe.png) no-repeat 50% 50%;
     background-color: rgba(255,255,255,.2);
 }
+
+
+/* шапка-вход*/
 
 .login {
     position: relative;
@@ -107,32 +201,7 @@ h2 {
     background-color: rgba(255,255,255,.2);
 }
 
-.entry::before {
-    content: "";
-
-    position: absolute;
-
-    background-image: url(../img/entry.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-}
-
-.login-modal {
-    position: absolute;
-    z-index: 5;
-    top: 35px;
-    right: -2px;
-    display: none;
-    background-color: #f8f7f4;
-    box-shadow: 2px 10px 20px 3px #505f57;
-    width: 276px;
-    height: 213px;
-    padding: 20px 19px;
-}
-
-/* Корзина */
-
+/* шапка-корзина*/
 .basket {
     position: relative;
     display: inline-block;
@@ -157,114 +226,17 @@ h2 {
     background-color: rgba(255,255,255,.2);
 }
 
-/* Корзина inner */
-
-.orders {
-  box-sizing: border-box;
-  width: 540px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 20px 20px 0 rgba(black, 0.4);
-  font-size: 13px;
-  line-height: 16px;
+.basket-field-on::before {
+    position: absolute;
+    bottom: 6px;
+    left: 17px;
+    width: 21px;
+    height: 20px;
+    content: '';
+    background-image: url(../img/basket.png);
 }
 
-.orders-row {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.orders-main .orders-row:last-of-type {
-  position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  box-shadow: inset 0 -1px 0 0 rgba(#5a5a5a, 0.2);
-}
-
-.orders-data {
-  flex: 0 0 auto;
-  padding: 0;
-}
-
-.orders__data:not(.orders-data-wp) {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.orders-discard {
-  position: relative;
-  display: block;
-  margin-left: -5px;
-  padding: 16px;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-
-
-.orders-discard::before {
-    width: 1px;
-    height: 15px;
-  }
-
-.orders-discard::after {
-    width: 15px;
-    height: 1px;
-  }
-}
-
-.orders-image {
-  width: 33px;
-  height: auto;
-  display: block;
-  margin-right: 12px;
-}
-
-.orders-name {
-  width: 220px;
-  margin: 0;
-  margin-right: 27px;
-}
-
-.orders-amount {
-  margin-right: 27px;
-  width: 95px;
-}
-
-.orders-rate {
-  white-space: nowrap;
-  color: #999999;
-}
-
-.orders-price {
-  width: 70px;
-  overflow: auto;
-}
-
-.orders-foot {
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.orders-foot .orders-row {
-  margin-bottom: 10px;
-}
-
-.orders-foot .orders-row:last-of-type {
-  margin-bottom: 0;
-}
-
-.orders-total {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
-
-
-/* часы и телефон */
+/* шапка-часы работы и телефон*/
 
 .header-right-bottom {
     z-index: 5;
@@ -280,6 +252,14 @@ h2 {
     text-align: right;
 }
 
+.header-right-bottom p, .header-right-bottom-2 p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 0 0 5px;
+    color: #fff;
+}
+
 .header-right-bottom span, .header-right-bottom-2 span {
     font-size: 22px;
     font-weight: 700;
@@ -288,9 +268,14 @@ h2 {
     color: #fff;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 
-/* Слайдер */
+}
 
+/* слайдер -----------------------------------------------------------------------------------------------------*/
 .slider {
     position: relative;
     padding-top: 270px;
@@ -322,7 +307,6 @@ h2 {
     text-decoration: none;
     color: #fff;
     border-radius: 100px;
-    background: #f26843;
     background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
@@ -348,28 +332,27 @@ h2 {
     background-color: transparent;
 }
 
-.slide1{
-  position: relative;
-  z-index: 1;
+/* акции -----------------------------------------------------------------------------------------------------*/
+
+.basic {
+    vertical-align: top;
 }
 
-.slide2{
-  position: relative;
-  z-index: 2;
-}
-
-.slide3{
-  position: relative;
-  z-index: 3;
-}
-
-
-
-/* Акции */
 .stock {
-    flex-wrap: wrap;
     margin-bottom: 30px;
     color: #fff;
+}
+
+.stock-left {
+    position: relative;
+    margin-right: 2.2%;
+    margin-left: 2.3%;
+    background: #79092b url(../img/raspberry-background.png);
+}
+
+.stock-right {
+    position: relative;
+    background: #79092b url(../img/chocolate-background.png);
 }
 
 .offer {
@@ -383,22 +366,20 @@ h2 {
     border-radius: 20px;
 }
 
-.stock-left {
-    position: relative;
-    margin-right: 2.2%;
-    margin-left: 2.3%;
-    background: #79092b url(../img/raspberry-background.png);
-    background-position: -50px -94px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.offer span {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+    padding-top: 17px;
 }
 
-.stock-right {
-    position: relative;
-    background: #79092b url(../img/chocolate-background.png);
-    background-position: -218px -104px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.offer p {
+    margin: 14px 0 0;
+    line-height: 22px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .btn-stock {
@@ -413,23 +394,28 @@ h2 {
     vertical-align: top;
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
+    font-weight: 700;
     border-radius: 100px;
     background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
     background-color: #ea5b3d;
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
 }
 
-.btn-stock, .offer p {
-    font-size: 18px;
-    font-weight: 700;
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
-
-/* Хиты продаж */
+/* хиты продаж -----------------------------------------------------------------------------------------------------*/
+.products {
+    font-size: 0;
+    position: relative;
+    margin-left: 3px;
+}
 
 .container {
-    display:flex;
-    flex-wrap: wrap;
     width: 100%;
     min-width: 900px;
     max-width: 1200px;
@@ -451,7 +437,15 @@ h2 {
     color: #fff;
 }
 
-
+.hit::before {
+    z-index: 100;
+    top: 10px;
+    left: 15px;
+    width: 61px;
+    height: 61px;
+    text-align: center;
+    background-image: url(../img/hit.png);
+}
 
 .icecream-wrapper {
     position: absolute;
@@ -462,47 +456,6 @@ h2 {
     padding-top: 5px;
     padding-right: 13px;
     padding-left: 13px;
-}
-
-.icecream-price {
-    font-weight: 700;
-    z-index: 200;
-    bottom: 73px;
-    left: 12px;
-    padding-right: 90px;
-    text-shadow: #697b72 1px 1px 3px;
-    font-size: 45px;
-}
-
-.mini {
-    font-size: 30px;
-    top: 4px;
-    right: 12px;
-}
-
-.mini::after {
-    right: 44px;
-    top: 2px;
-    width: 31px;
-    height: 36px;
-    background-image: url(../img/ruble.png);
-}
-
-.icecream-species {
-    display: block;
-    overflow: hidden;
-    height: 46px;
-    padding-top: 4px;
-    padding-right: 4px;
-    padding-left: 5px;
-    text-align: center;
-}
-
-.icecream-item {
-    border-bottom: 1px solid #9db1a5;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
 }
 
 .icecream-btn {
@@ -516,13 +469,16 @@ h2 {
     margin: 9px 46px 21px;
     padding-top: 9px;
     border-radius: 100px;
-    background: #f06441;
     background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
 }
 
-/* О нас */
+.icecream-btn, .icecream-item {
+    text-decoration: none;
+    color: #fff;
+}
 
+/* о нас-----------------------------------------------------------------------------------------------------*/
 .about-us {
     position: relative;
     box-sizing: border-box;
@@ -567,6 +523,10 @@ h2 {
     background-image: url(../img/icecream.png);
 }
 
+.about-us-left-bottom, .about-us-left-top {
+    margin-top: 22px;
+}
+
 .about-us-left::after {
     top: 180px;
     background-image: url(../img/eco.png);
@@ -597,7 +557,14 @@ h2 {
     background-image: url(../img/thermometer.png);
 }
 
-/* Блог + Подписка */
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+/* Блог-----------------------------------------------------------------------------------------------------*/
+
 .container-left {
     float: left;
     box-sizing: border-box;
@@ -629,6 +596,7 @@ h2 {
     color: #323232;
 }
 
+/* подписка-----------------------------------------------------------------------------------------------------*/
 .container-right {
     position: relative;
     float: right;
@@ -642,24 +610,16 @@ h2 {
     background: url(../img/dispatch-background.png);
 }
 
-.container-right-layer {
-    font-size: 0;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    box-sizing: border-box;
-    width: 550px;
-    min-height: 210px;
-    padding-left: 23px;
-    border-radius: 15px;
-    background: #f8f7f4;
-}
-
 .container-right-layer p {
     font-size: 16px;
     line-height: 22px;
     margin: 26px 12px 35px 2px;
     padding: 0;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
 }
 
 .container-right-layer input {
@@ -695,14 +655,7 @@ h2 {
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
 }
 
-.clearfix::after {
-    display: table;
-    clear: both;
-    content: '';
-}
-
-/* форма обратной связи */
-
+/* форма обратной связи-----------------------------------------------------------------------------------------------------*/
 .feedback {
     position: relative;
     z-index: 60;
@@ -731,12 +684,27 @@ h2 {
     padding: 0;
 }
 
+.adress {
+    margin-bottom: 18px;
+    line-height: 24px;
+}
+
 .feedback-text .for-phone {
     margin-bottom: 6px;
 }
 
 .feedback-text .time {
     margin-top: 2px;
+}
+
+.phone {
+    line-height: 22px;
+}
+
+.adress, .phone {
+    font-size: 18px;
+    font-weight: 700;
+    color: #323232;
 }
 
 .feedback-btn .contact-feedback {
@@ -749,7 +717,6 @@ h2 {
     box-sizing: border-box;
     padding: 9px 0 21px 30px;
     color: #fff;
-    background: #f26843;
     background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
     background-color: #ea5b3d;
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
@@ -762,14 +729,29 @@ h2 {
     border-radius: 100px;
 }
 
+.feedback-btn .contact-feedback, .social-btn {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
 
-/* Футер*/
-
+/* футер-----------------------------------------------------------------------------------------------------*/
+/* соцсети-----------------------------------------------------------------------------------------------------*/
 .social {
     float: left;
     width: 200px;
     margin-top: 3px;
     margin-left: 2.3%;
+}
+
+.social-btn {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+    opacity: .8;
+    border: 3px solid #c2cec7;
+    border-radius: 50%;
 }
 
 .social-btn-tw {
@@ -787,24 +769,16 @@ h2 {
     background-position: 50% 50%;
 }
 
+.social-btn:last-child {
+    margin-right: 0;
+}
+
 .social-btn-vk {
     background: url(../img/vk.png);
     background-position: 50% 50%;
 }
 
-.social-btn {
-    display: inline-block;
-    vertical-align: top;
-    text-decoration: none;
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-    margin-right: 11px;
-    opacity: .8;
-    border: 3px solid #c2cec7;
-    border-radius: 50%;
-}
-
+/* сделано в академии-----------------------------------------------------------------------------------------------------*/
 .footer-copyright {
     position: relative;
     float: right;
@@ -830,6 +804,17 @@ h2 {
     padding-top: 17px;
 }
 
+.copy p, .production a {
+    line-height: 18px;
+    color: #fff;
+}
+
+.site {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
 .footer-copyright::after {
     position: absolute;
     top: -34px;
@@ -839,6 +824,8 @@ h2 {
     content: '';
     background-color: #9db1a5;
 }
+
+/* доки-----------------------------------------------------------------------------------------------------*/
 
 .production {
     position: relative;
@@ -855,6 +842,11 @@ h2 {
     font-size: 13px;
 }
 
+.copy, .production .providers, .production a {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .production a {
     font-weight: 400;
     text-decoration: none;
@@ -863,15 +855,4 @@ h2 {
 
 .production .about-make {
     margin-right: 40px;
-}
-
-/* карта*/
-
-.modal-content-map {
-    position: absolute;
-    z-index: 50;
-    top: 1884px;
-    width: 100%;
-    height: 430px;
-    background: url(../img/map.png) center no-repeat;
 }
