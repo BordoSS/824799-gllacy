@@ -14,7 +14,7 @@
     <header class="main-header">
       <div class="index-logo">
         <a class="logo" href="index.html#">
-          <img src="logo-htmlacademy.svg" width="152" height="63" alt="Логотип">
+          <img src="logo-htmlacademy.png" width="152" height="63" alt="Логотип">
         </a>
       </div>
       <div class="header-left">
@@ -65,34 +65,76 @@
             <div class="basket-icon-on">
               <a class="basket-field-on active" href="#">2 товара</a>
             </div>
-            <div class="basket-modal">
-              <div class="basket-product clearfix">
-                <div class="marked">
-                  <a class="closed closed-1" href="#"></a>
-                  <a class="basket-1 marked-name name-1" href="#">Пломбир с апельсиновым джемом</a>
-                  <img class="name-2 image" src="img/small-ice-pink.png" width="33" height="33" alt="Миниатюра мороженого">
-                  <p class="basket-1 basket-sum">1,5 кг x <span>200 руб.</span></p>
 
-                  <p class="basket-1 basket-sum-all">300 руб.</p>
-                </div>
-              </div>
-              <div class="basket-product clearfix">
-                <div class="marked">
-                  <a class="closed closed-2" href="#"></a>
-                  <a class="basket-2 marked-name name-2" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                  <img class="name-2 image" src="img/small-ice-cream.png" width="33" height="33" alt="Миниатюра мороженого">
-                  <p class="basket-2 basket-sum">1,5 кг x <span>300 руб.</span></p>
 
-                  <p class="basket-2 basket-sum-all">450 руб.</p>
-                </div>
-              </div>
-              <span class="total">Итого: 750 руб.</span>
+            <table class="orders">
+                    <thead class="visually-hidden">
+                    <tr>
+                      <th>Отменить выбор</th>
+                      <th>Миниатюра мороженого</th>
+                      <th>Название мороженого</th>
+                      <th>Вес</th>
+                      <th>Стоимость</th>
+                    </tr>
+                    </thead>
 
-              <div class="btn-wrapp">
-                <a class="btn-order" href="#">Оформить заказ</a>
-              </div>
-            </div>
+                    <tbody class="orders-main">
+                    <tr class="orders-row">
+                      <td class="orders-data-wp">
+                        <button class="orders-discard" type="button">
+                          <span class="visually-hidden">Отмена</span>
+                        </button>
+                      </td>
+                      <td class="orders-data-wp">
+                        <img class="orders-image"
+                          src="img/small-ice-cream.png"   width="33" height="33" alt="Миниатюра мороженого">
+                      </td>
+                      <td class="orders-data">
+                        <p class="orders-name">   Пломбир с апельсиновым джемом </p>
+                      </td>
+                      <td class="orders-amount">
+                        <span class="orders-weight">1,5 кг</span>
+                        х
+                        <span class="orders-rate">200 руб.</span>
+                      </td>
+                      <td class="orders-price">300 руб.</td>
+                    </tr>
+
+                    <tr class="orders-row">
+                      <td class="orders-data-wp">
+                        <button class="orders-discard" type="button">
+                          <span class="visually-hidden">Отмена</span>
+                        </button>
+                      </td>
+                      <td class="orders-data-wp">
+                        <img class="orders-image"   src="img/small-ice-pink.png" width="33" height="33" alt="Миниатюра мороженого">
+                      </td>
+                      <td class="orders-data">
+                        <p class="orders-name"> Клубничный пломбир с присыпкой из белого шоколада </p>
+                      </td>
+                      <td class="orders-amount">
+                        <span class="orders-weight">1,5 кг</span>
+                        х
+                        <span class="orders-rate">300 руб.</span>
+                      </td>
+                      <td class="orders-price">450 руб.</td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot class="orders-foot">
+                    <tr class="row-foot">
+                      <td class="orders-total">Итого: <span>750 руб.</span> </td>
+                    </tr>
+
+                    <tr class="row-foot">
+                      <td class="orders-submit">
+                        <button class="btn" type="submit">Оформить заказ</button>
+                      </td>
+                    </tr>
+                    </tfoot>
+                  </table>
           </div>
+
           <div class="header-right-bottom">
             <p>c 10 до 20, ежедневно</p>
             <span>8 812 450-25-25</span>
@@ -367,21 +409,21 @@
       <div class="clearfix">
         <div class="social">
           <a class="social-btn social-btn-tw" href="#">
-            <img src="img/twitter.svg" alt="tw">
+            <img src="img/twitter.png" alt="tw">
           </a>
           <a class="social-btn social-btn-inst" href="#">
-            <img src="img/instagram.svg" alt="ins">
+            <img src="img/instagram.png" alt="ins">
           </a>
           <a class="social-btn social-btn-fb" href="#">
-            <img src="img/fb.svg" alt="fb">
+            <img src="img/fb.png" alt="fb">
           </a>
           <a class="social-btn social-btn-vk" href="#">
-            <img src="img/vk.svg" alt="vk">
+            <img src="img/vk.png" alt="vk">
           </a>
         </div>
         <div class="footer-copyright clearfix">
           <a class="btn-academy" href="https://htmlacademy.ru">
-            <img src="img/logo-htmlacademy.svg" alt="Логотип Академии">
+            <img src="img/logo-htmlacademy.png" alt="Логотип Академии">
           </a>
           <div class="copy">
             <p>Сделано в <a class="site" href="#">HTML Academy</a> &copy; 2016</p>

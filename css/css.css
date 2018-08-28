@@ -77,7 +77,7 @@ h2 {
     display: block;
     padding: 16px;
     border-radius: 16px;
-    background: url(../img/loupe.svg) no-repeat 50% 50%;
+    background: url(../img/loupe.png) no-repeat 50% 50%;
     background-color: rgba(255,255,255,.2);
 }
 
@@ -131,6 +131,8 @@ h2 {
     padding: 20px 19px;
 }
 
+/* Корзина */
+
 .basket {
     position: relative;
     display: inline-block;
@@ -155,6 +157,115 @@ h2 {
     background-color: rgba(255,255,255,.2);
 }
 
+/* Корзина inner */
+
+.orders {
+  box-sizing: border-box;
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 20px 0 rgba(black, 0.4);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.orders-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.orders-main .orders-row:last-of-type {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  box-shadow: inset 0 -1px 0 0 rgba(#5a5a5a, 0.2);
+}
+
+.orders-data {
+  flex: 0 0 auto;
+  padding: 0;
+}
+
+.orders__data:not(.orders-data-wp) {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.orders-discard {
+  position: relative;
+  display: block;
+  margin-left: -5px;
+  padding: 16px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+
+.orders-discard::before {
+    width: 1px;
+    height: 15px;
+  }
+
+.orders-discard::after {
+    width: 15px;
+    height: 1px;
+  }
+}
+
+.orders-image {
+  width: 33px;
+  height: auto;
+  display: block;
+  margin-right: 12px;
+}
+
+.orders-name {
+  width: 220px;
+  margin: 0;
+  margin-right: 27px;
+}
+
+.orders-amount {
+  margin-right: 27px;
+  width: 95px;
+}
+
+.orders-rate {
+  white-space: nowrap;
+  color: #999999;
+}
+
+.orders-price {
+  width: 70px;
+  overflow: auto;
+}
+
+.orders-foot {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.orders-foot .orders-row {
+  margin-bottom: 10px;
+}
+
+.orders-foot .orders-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.orders-total {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+
+
+/* часы и телефон */
+
 .header-right-bottom {
     z-index: 5;
     top: 48px;
@@ -177,11 +288,6 @@ h2 {
     color: #fff;
 }
 
-img {
-max-width: 100%;
-height: auto;
-
-}
 
 /* Слайдер */
 
@@ -293,7 +399,6 @@ height: auto;
     background-position: -218px -104px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -218px -104px;
 }
 
 .btn-stock {
@@ -346,15 +451,7 @@ height: auto;
     color: #fff;
 }
 
-.hit::before {
-    z-index: 100;
-    top: 10px;
-    left: 15px;
-    width: 61px;
-    height: 61px;
-    text-align: center;
-    background-image: url(../img/hit.svg);
-}
+
 
 .icecream-wrapper {
     position: absolute;
@@ -388,7 +485,7 @@ height: auto;
     top: 2px;
     width: 31px;
     height: 36px;
-    background-image: url(../img/ruble.svg);
+    background-image: url(../img/ruble.png);
 }
 
 .icecream-species {
@@ -467,12 +564,12 @@ height: auto;
     width: 49px;
     height: 49px;
     content: '';
-    background-image: url(../img/icecream.svg);
+    background-image: url(../img/icecream.png);
 }
 
 .about-us-left::after {
     top: 180px;
-    background-image: url(../img/eco.svg);
+    background-image: url(../img/eco.png);
 }
 
 .about-us-right {
@@ -488,7 +585,7 @@ height: auto;
     width: 49px;
     height: 49px;
     content: '';
-    background-image: url(../img/icon-cow.png);
+    background-image: url(../img/cow.png);
 }
 
 .about-us-right-bottom, .about-us-right-top {
@@ -497,7 +594,7 @@ height: auto;
 
 .about-us-right::after {
     top: 180px;
-    background-image: url(../img/thermometer.svg);
+    background-image: url(../img/thermometer.png);
 }
 
 /* Блог + Подписка */
@@ -676,22 +773,22 @@ height: auto;
 }
 
 .social-btn-tw {
-    background: url(../img/twitter.svg);
+    background: url(../img/twitter.png);
     background-position: 50% 50%;
 }
 
 .social-btn-inst {
-    background: url(../img/instagram.svg);
+    background: url(../img/instagram.png);
     background-position: 50% 50%;
 }
 
 .social-btn-fb {
-    background: url(../img/fb.svg);
+    background: url(../img/fb.png);
     background-position: 50% 50%;
 }
 
 .social-btn-vk {
-    background: url(../img/vk.svg);
+    background: url(../img/vk.png);
     background-position: 50% 50%;
 }
 
