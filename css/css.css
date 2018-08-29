@@ -67,7 +67,7 @@ h2 {
 
 
 
-/* шапка-слева -----------------------------------------------------------------------------------------------------*/
+/* логотип -----------------------------------------------------------------------------------------------------*/
 
 .index-logo {
     float: left;
@@ -76,6 +76,8 @@ h2 {
     margin-left: -3px;
 }
 
+/* каталог, доставака, о компании -----------------------------------------------------------------------------------------------------*/
+
 .header-left {
     float: left;
     width: 400px;
@@ -83,8 +85,9 @@ h2 {
     margin-left: 16px;
 }
 
+/* каталог -----------------------------------------------------------------------------------------------------*/
+
 .main-menu, .sub-menu {
-    display: block;
     font-size: 0;
     margin: 0;
     padding: 0;
@@ -96,9 +99,6 @@ h2 {
     font-weight: 700;
     line-height: 18px;
     padding-bottom: 7px;
-}
-
-.breadcrumbs li, .main-menu>li {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -114,9 +114,15 @@ h2 {
     border-radius: 20px;
 }
 
-/* шапка-каталог */
-a {
-    background-color: transparent;
+.menu-item::before {
+    position: absolute;
+    top: 25px;
+    right: 13px;
+    left: 13px;
+    width: auto;
+    height: 1px;
+    content: '';
+    background-color: rgba(255,255,255,.2);
 }
 
 .sub-menu {
@@ -132,9 +138,13 @@ a {
     box-shadow: 5px 15px 15px 5px #58665e;
 }
 
-/* шапка-каталог-выпадающий список */
 .sub-menu li:first-child {
     border-radius: 5px 5px 0 0;
+}
+
+.sub-menu li:last-child {
+    padding-bottom: 7px;
+    border-radius: 0 0 5px 5px;
 }
 
 .sub-menu li {
@@ -143,6 +153,79 @@ a {
     vertical-align: middle;
 }
 
+.sub-menu .sub-menu-news {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+}
+
+.sub-menu a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*хлебные крошки inner -----------------------------------------------------------------------------------------------------*/
+.breadcrumbs {
+    font-size: 0;
+    margin: 18px 0 0 2.3%;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    padding-right: 21px;
+}
+
+.breadcrumbs a, .breadcrumbs span {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    color: #fff;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    border-bottom: 1px solid #aebeb5;
+}
+
+.menu-item {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 14px;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.breadcrumbs li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* шапка-каталог - inner */
+.active-catalog {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 14px;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.active-catalog, .sub-menu .sub-menu-choice {
+    color: #fff;
+    background-color: #d07058;
+}
 
 /* шапка-справа -----------------------------------------------------------------------------------------------------*/
 .header-right-top {
@@ -153,8 +236,6 @@ a {
     width: 269px;
     margin: 17px -11px 0 0;
 }
-
-
 
 /* шапка-поиск*/
 .search {
@@ -172,6 +253,48 @@ a {
     background-color: rgba(255,255,255,.2);
 }
 
+.field:hover {
+    border-radius: 20px;
+    background: #f8f7f4 url(../img/loupe-active.png) no-repeat 50% 50%;
+}
+
+a:active, a:hover {
+    outline-width: 0;
+}
+
+.field:hover .search-form, .search:hover .search-modal, .sub-menu a, li:hover .sub-menu {
+    display: block;
+}
+
+.search-modal {
+    position: absolute;
+    z-index: 5;
+    top: 36px;
+    right: 0;
+    display: none;
+    box-sizing: border-box;
+    width: 341px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #f8f7f4;
+    box-shadow: 2px 10px 20px 3px #505f57;
+}
+
+.search-modal input[type=search] {
+    font-size: 14px;
+    line-height: 24px;
+    box-sizing: border-box;
+    width: 309px;
+    height: 42px;
+    margin: 24px 15px;
+    padding: 0 14px;
+    color: #999;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: none;
+}
 
 /* шапка-вход*/
 
@@ -199,6 +322,26 @@ a {
     color: #fff;
     border-radius: 15px;
     background-color: rgba(255,255,255,.2);
+}
+
+.entry:hover {
+    color: #000;
+    border-radius: 15px;
+    background: #f8f7f4;
+}
+
+.entry:hover::before {
+    background-image: url(../img/entrance-active.png);
+}
+
+.entry::before {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    width: 22px;
+    height: 19px;
+    content: '';
+    background: url(../img/entrance.png) no-repeat;
 }
 
 /* шапка-корзина*/
@@ -273,6 +416,244 @@ a {
     display: table;
     clear: both;
 
+}
+
+/*фильтры inner -----------------------------------------------------------------------------------------------------*/
+/*сортировка -----------------------------------------------------------------------------------------------------*/
+.choice-left {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.choice-left, .sort .popular {
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.sorting {
+    float: left;
+    box-sizing: border-box;
+    width: 190px;
+    margin: 13px 14px 0 15px;
+    padding: 0;
+}
+
+.sorting p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 7px 30px;
+    padding: 0;
+}
+
+.sort {
+    position: relative;
+    height: 36px;
+    margin-left: 13px;
+    border-radius: 20px;
+}
+
+.sort .popular {
+    font-size: 16px;
+    line-height: 18px;
+    width: 193px;
+    height: 36px;
+    padding: 6px 0 11px 14px;
+    border: none;
+    border-radius: 25px;
+    background: #a9b9af;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.sort::after {
+    position: absolute;
+    top: 15px;
+    right: -3px;
+    width: 9px;
+    height: 5px;
+    content: '';
+    background-image: url(../img/select-arrow.png);
+}
+/*цена -----------------------------------------------------------------------------------------------------*/
+.price {
+    float: left;
+    width: 225px;
+    margin-top: 13px;
+    margin-right: 14px;
+    margin-left: 16px;
+}
+
+.price p, .fatness p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 7px 18px;
+    padding: 0;
+}
+
+.range-controls {
+    position: relative;
+    box-sizing: border-box;
+    width: 222px;
+    height: 36px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 25px;
+    background: #a9b9af;
+}
+
+.range-controls .scale {
+    height: 4px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 82px;
+    height: 4px;
+    margin-left: 40px;
+    background: #f8f7f4;
+}
+
+.range-controls .toggle-min {
+    left: 36px;
+}
+
+.range-controls .toggle-max {
+    left: 134px;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    background: #f8f7f4;
+    box-shadow: 0 1px 0 0 #a0aea5;
+}
+
+/*жирность -----------------------------------------------------------------------------------------------------*/
+.fatness {
+    float: left;
+    width: 416px;
+    margin-top: 12px;
+}
+.fatness {
+    float: left;
+    width: 416px;
+    margin-top: 12px;
+}
+
+.fatness .wrapper {
+    font-size: 0;
+    box-sizing: border-box;
+    width: 415px;
+    height: 36px;
+    margin-left: -2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 30px;
+    background-color: #aabcb2;
+}
+
+.fatness label:first-child {
+    padding-left: 45px;
+}
+
+.fatness label {
+    font-size: 16px;
+    line-height: 18px;
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 46px;
+    cursor: pointer;
+}
+
+/*наполнители -----------------------------------------------------------------------------------------------------*/
+.choice-right {
+    position: relative;
+    left: 10px;
+}
+
+.fillers-choice {
+    float: left;
+    width: 704px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.fillers-choice p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 34px;
+}
+
+.fillers-filter {
+    font-size: 0;
+    box-sizing: border-box;
+    width: 703px;
+    height: 36px;
+    margin-left: 20px;
+    padding: 0;
+    border-radius: 30px;
+    background-color: #aabcb2;
+}
+
+.fillers-filter label {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.fillers-choice label {
+    position: relative;
+    display: inline-block;
+    margin-top: 9px;
+    padding-left: 46px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.fillers-filter label:nth-child(2) {
+    margin-left: 6px;
+}
+
+.fillers-filter label:nth-child(3), .fillers-filter label:nth-child(4) {
+    margin-left: 10px;
+}
+
+.fillers-filter label:nth-child(5) {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.choice-btn {
+    font-size: 16px;
+    line-height: 18px;
+    position: absolute;
+    top: 37px;
+    left: 734px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 144px;
+    height: 36px;
+    padding: 7px 0 10px;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #aabcb2;
 }
 
 /* слайдер -----------------------------------------------------------------------------------------------------*/
@@ -734,6 +1115,53 @@ form {
     vertical-align: top;
     text-decoration: none;
 }
+
+/* пагинатор-----------------------------------------------------------------------------------------------------*/
+.paginator {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 54px;
+    margin-bottom: 65px;
+    padding-right: 18px;
+    text-align: right;
+}
+
+.paginator .disabled {
+    opacity: .3;
+}
+
+.paginator .prev {
+    background-image: url(../img/icon-right-small.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.paginator .next {
+    margin-left: 5px;
+    background-image: url(../img/icon-left-small.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.paginator a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.paginator .current {
+    color: #000;
+    background-color: #fff;
+}
+
 
 /* футер-----------------------------------------------------------------------------------------------------*/
 /* соцсети-----------------------------------------------------------------------------------------------------*/
