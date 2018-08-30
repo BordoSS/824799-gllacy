@@ -358,39 +358,9 @@ a:active, a:hover {
 }
 
 /* шапка-корзина*/
-.basket {
-    position: relative;
-    display: inline-block;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    vertical-align: top;
-    border-radius: 15px;
-}
 
-.basket-field-on {
-    font-size: 14px;
-    line-height: 16px;
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    min-width: 118px;
-    height: 32px;
-    padding: 8px 20px 8px 44px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 15px;
-    background-color: rgba(255,255,255,.2);
-}
 
-.basket-field-on::before {
-    position: absolute;
-    bottom: 6px;
-    left: 17px;
-    width: 21px;
-    height: 20px;
-    content: '';
-    background-image: url(../img/basket.png);
-}
+
 
 /* шапка-часы работы и телефон*/
 
@@ -779,7 +749,7 @@ body #btn-1,
 }
 #btn-3:checked ~ .site-wrapper {
     background-color: #9d8b84;
-    background-image: url("../img/icecream-slider-1.png");
+    background-image: url("../img/icecream-slider-3.png");
 }
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
 #btn-2:checked ~ .site-wrapper label[for="btn-2"],
@@ -1207,98 +1177,137 @@ iframe {
     background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 /* пагинатор-----------------------------------------------------------------------------------------------------*/
 .paginator {
-    display: block;
-    box-sizing: border-box;
-    margin-top: 54px;
-    margin-bottom: 65px;
-    padding-right: 18px;
-    text-align: right;
+    margin: 20px 9px 47px 945px;
+    padding-left: 30px;
+    padding-right: 16px;
+    padding-top: 21px;
+    position: relative;
 }
-
-.paginator .disabled {
-    opacity: .3;
+.disabled,
+.disabled::before {
+    border-color: rgba(255, 255, 255, 0.2);
 }
-
-.paginator .prev {
-    background-image: url(../img/icon-right-small.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.paginator .next {
-    margin-left: 5px;
-    background-image: url(../img/icon-left-small.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-.paginator a {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 25px;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #fff;
+.page {
     border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 4px 8px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
 }
-
-.paginator .current {
-    color: #000;
+.previous-page {
+    left: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.next-page,
+.previous-page {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    height: 9px;
+    position: absolute;
+    top: 58px;
+    width: 9px;
+}
+.current-page,
+.page .current-page:hover {
     background-color: #fff;
+}
+.paginator .current-page,
+.page:active {
+    color: #323232;
+}
+.next-page {
+    right: 14px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.next-page,
+.previous-page {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    height: 9px;
+    position: absolute;
+    top: 30px;
+    width: 9px;
+}
+.page:hover {
+    background-color: rgba(255, 255, 255, 0.2)
+}
+.page:active{
+    background-color: #ffffff;
 }
 
 
 /* футер-----------------------------------------------------------------------------------------------------*/
 /* соцсети-----------------------------------------------------------------------------------------------------*/
 .social {
-    float: left;
-    width: 200px;
-    margin-top: 3px;
-    margin-left: 2.3%;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-right: 78px;
+    margin-top: 10px;
+    padding-bottom: 0;
+    padding-right: 30px;
+    padding-top: 15px;
+    position: relative;
+    vertical-align: baseline;
+    width: 200px;;
 }
 
 .social-btn {
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-    margin-right: 11px;
-    opacity: .8;
-    border: 3px solid #c2cec7;
-    border-radius: 50%;
+      display: inline-block;
+      opacity: 0.8;
+      position: absolute;
+      border-radius: 50%;
+      width: 33px;
+      height: 33px;
+      margin: 0;
+      font-size: 0;
+      vertical-align: top;
+      text-decoration: none;
+      background: url(../img/sprite.png) no-repeat #849d8f;
+}
+
+.social-btn:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
 }
 
 .social-btn-tw {
-    background: url(../img/twitter.png);
-    background-position: 50% 50%;
+  background-position: -10px -715px;
+  top: 0px;
+  left: -1px;
 }
 
 .social-btn-inst {
-    background: url(../img/instagram.png);
-    background-position: 50% 50%;
+  background-position: -11px -432px;
+  top: 0px;
+  left: 47px;
 }
 
 .social-btn-fb {
-    background: url(../img/fb.png);
-    background-position: 50% 50%;
-}
-
-.social-btn:last-child {
-    margin-right: 0;
+  background-position: -11px -198px;
+  top: 2px;
+  left: 95px;
 }
 
 .social-btn-vk {
-    background: url(../img/vk.png);
-    background-position: 50% 50%;
-}
+  background-position: -11px -767px;
+  top: 0px;
+  left: 145px;
 
 /* сделано в академии-----------------------------------------------------------------------------------------------------*/
+
 .footer-copyright {
     position: relative;
     float: right;
@@ -1348,31 +1357,53 @@ iframe {
 /* доки-----------------------------------------------------------------------------------------------------*/
 
 .production {
-    position: relative;
-    float: left;
-    width: 350px;
-    margin-top: -1px;
-    margin-left: 223px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0;
+      margin-right: 100px;
+      margin-left: 80px;
+      padding: 5px;
+      padding-bottom: 0;
+      padding-top: 0px;
+      margin-top: 27px;
 }
 
-.production .providers {
-    font-weight: 700;
+.production-p {
+    font-size: 13px;
     line-height: 18px;
-    margin-right: 27px;
-    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    padding-top: 7px;
 }
-
-.copy, .production .providers, .production a {
+.production-right {
+    position: relative;
+}
+.production-left {
+    margin-bottom: 5px;
+}
+.production-right a:first-child {
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-bottom: 5px;
     display: inline-block;
-    vertical-align: top;
-}
-
-.production a {
-    font-weight: 400;
     text-decoration: none;
-    font-size: 13px;
 }
-
-.production .about-make {
-    margin-right: 40px;
+.production-right a:first-child::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -2px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/sprite.png) transparent no-repeat;
+    background-position: -10px -247px;
+    z-index: 10;
+}
+.production-left a {
+    padding-left: 19px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 23px;
+    display: inline-block;
 }

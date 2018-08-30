@@ -13,12 +13,11 @@
 <body>
   <div class="container">
     <header class="main-header">
-      <div class="index-logo">
-        <a class="logo" href="index.html#">
-          <img src="logo.png" width="152" height="63" alt="Логотип">
-        </a>
+      <div class="index-logo clearfix">
+        <img src="img/logo.png" width="104" height="41" alt="Логотип">
       </div>
-      <div class="header-left">
+
+      <div class="header-left clearfix">
         <ul class="main-menu">
           <li> <a class="active-catalog" href="#">Каталог</a>
             <ul class="sub-menu">
@@ -33,8 +32,10 @@
           <li> <a class="menu-item" href="#">О Компании</a>   </li>
         </ul>
       </div>
+
       <div class="header-right clearfix">
         <div class="header-right-top">
+
           <div class="search">
             <div class="search-icon">
               <a class="field" href="#"></a>
@@ -45,28 +46,28 @@
               </form>
             </div>
           </div>
+
           <div class="login">
             <div class="login-icon">
               <a class="entry" href="#">Вход</a>
             </div>
+
             <div class="login-modal">
               <form action="#" method="post">
-
-                        <legend>Вход:</legend>
+                <legend>Вход:</legend>
                 <input type="text" name="mail" id="mail" placeholder="Электронная почта">
                 <input type="password" name="password" id="password" placeholder="Пароль">
                 <a class="help help-1" href="#">Забыли пароль?</a>
                 <a class="help help-2" href="#">Новая регистрация</a>
                 <input type="submit" value="Войти">
-
               </form>
             </div>
           </div>
+
           <div class="basket">
             <div class="basket-icon-on">
               <a class="basket-field-on active" href="#">2 товара</a>
             </div>
-
 
             <table class="orders">
                     <thead class="visually-hidden">
@@ -396,16 +397,17 @@
         </div>
       </div>
 
-      <div class="paginator container">
-        <a class="prev disabled" href="#"></a>
-        <a class="current">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a class="next" href="#"></a>
+      <div class="paginator">
+          <a class="previous-page disabled"></a>
+          <a class="page current-page">1</a>
+          <a class="page" href="#">2</a>
+          <a class="page" href="#">3</a>
+          <a class="page" href="#">4</a>
+          <a class="page" href="#">5</a>
+          <a class="next-page" href="#"></a>
       </div>
     </div>
+
     <footer class="main-footer container">
       <div class="clearfix">
         <div class="social">
@@ -423,14 +425,17 @@
             <p>Сделано в <a class="site" href="#">HTML Academy</a> &copy; 2017</p>
           </div>
         </div>
-        <div class="production">
-          <a class="providers" href="#">Для поставщиков</a>
-          <a href="#">Наши документы</a>
-          <a class="about-make" href="#">О производстве</a>
-          <a href="#">Экологические стандарты</a>
-        </div>
+        <section class="production">
+          <div class="production-right">
+            <a class="production-p" href="#">Для поставщиков</a>
+            <a class="production-ps" href="#">Наши документы</a>
+          </div>
+          <div class="production-left">
+            <a class="production-p" href="#">О производстве</a>
+            <a class="production-p" href="#">Экологические стандарты</a>
+          </div>
+        </section>
       </div>
-
     </footer>
   </div>
 </body>
