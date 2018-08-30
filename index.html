@@ -43,11 +43,37 @@
 
             <div class="search">
               <div class="search-icon">
-                <a class="field" href="#"></a>
+                <a class="field" href="#">
+                  <svg class="navigation-icon" width="21" height="20">
+                      <title>Поиск</title>
+                      <use xlink:href="img/sprite.svg#loupe"></use>
+                  </svg>
+                </a>
               </div>
               <div class="search-modal">
                 <form action="#" method="get">
                   <input type="search" name="search-form" placeholder="Что ищем?">
+                </form>
+              </div>
+            </div>
+
+            <div class="login">
+              <div class="login-icon">
+                <a class="entry" href="#">Вход
+                  <svg class="navigation-icon" width="21" height="20">
+                      <title>Поиск</title>
+                      <use xlink:href="img/sprite.svg#entrance"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="login-modal">
+                <form action="#" method="post">
+                  <legend>Вход:</legend>
+                  <input type="text" name="mail" id="mail" placeholder="Электронная почта">
+                  <input type="password" name="password" id="password" placeholder="Пароль">
+                  <a class="help help-1" href="#">Забыли пароль?</a>
+                  <a class="help help-2" href="#">Новая регистрация</a>
+                  <input type="submit" value="Войти">
                 </form>
               </div>
             </div>

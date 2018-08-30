@@ -65,8 +65,6 @@ h2 {
     padding-top: 7px;
 }
 
-
-
 /* логотип -----------------------------------------------------------------------------------------------------*/
 
 .index-logo {
@@ -112,6 +110,20 @@ h2 {
     text-decoration: none;
     color: #fff;
     border-radius: 20px;
+}
+
+.menu-item:hover {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 14px;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+    color: #000;
+    background-color: #fff;
 }
 
 .menu-item::before {
@@ -212,6 +224,7 @@ h2 {
     vertical-align: top;
 }
 
+
 /* шапка-каталог - inner */
 .active-catalog {
     display: block;
@@ -249,7 +262,7 @@ h2 {
     display: block;
     padding: 16px;
     border-radius: 16px;
-    background: url(../img/loupe.png) no-repeat 50% 50%;
+    background-image: url(../img/loupe.png) no-repeat 50% 50%;
     background-color: rgba(255,255,255,.2);
 }
 
@@ -657,60 +670,121 @@ option {
 }
 
 /* слайдер -----------------------------------------------------------------------------------------------------*/
+body #btn-1,
+#btn-2,
+#btn-3 {
+    display: none;
+}
+.site-wrapper {
+    margin: 0 auto;
+    padding: 0 2.3%;
+    min-width: 940px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+/*проверь, экран не должен моргать*/
+.site-wrapper:before,
+.site-wrapper:after {
+    content: "";
+    visibility: hidden;
+}
+.site-wrapper:before {
+    background-color: #8996a6;
+}
+.site-wrapper:after {
+    background-color: #a3918a;
+}
+.slide {
+    display: none;
+}
 .slider {
     position: relative;
-    padding-top: 270px;
-    padding-bottom: 40px;
+    padding-top: 55px;
+    margin-right: 22px;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
 }
-
 .slide-title {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 60px;
     width: 700px;
-    margin: 40px auto 32px;
-    padding-top: 2px;
-    padding-left: 1px;
+    margin: 13px auto 32px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60.35px;
 }
-
 .slide-btn {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 44px;
     display: inline-block;
-    box-sizing: border-box;
-    width: 278px;
-    height: 64px;
-    padding: 8px 38px;
+    padding: 13px 43px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 7px;
     vertical-align: top;
+    color: #ffffff;
     text-decoration: none;
-    color: #fff;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     border-radius: 100px;
-    background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
-    text-shadow: 0 2px 5px rgba(160,32,11,.76);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
-
-.slider-controls {
-    font-size: 0;
-    position: absolute;
-    z-index: 20;
-    bottom: 62px;
-    left: 28px;
+.slide-btn:hover {
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
-
+.slide-btn:active {
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
 .slider-controls label {
     display: inline-block;
     width: 17px;
     height: 17px;
     margin-right: 8px;
-    cursor: pointer;
     vertical-align: top;
-    border: 2px solid #fff;
-    border-radius: 50%;
     background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-controls {
+    position: absolute;
+    bottom: 35px;
+    left: 140px;
+    z-index: 20;
+    font-size: 0;
+}
+.slider-controls label:hover {
+    background-color: #b2c1b7;
+}
+.slider-controls label:active {
+    background-color: #ffffff;
+}
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+    display: block;
+}
+#btn-1:checked ~ .site-wrapper {
+    background-color: #849d8f;
+    background-image: url("../img/icecream-slider-1.png");
+}
+#btn-2:checked ~ .site-wrapper {
+    background-color: #8996a6;
+    background-image: url("../img/icecream-slider-2.png");
+}
+#btn-3:checked ~ .site-wrapper {
+    background-color: #9d8b84;
+    background-image: url("../img/icecream-slider-1.png");
+}
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+    background-color: #ffffff;
 }
 
 /* акции -----------------------------------------------------------------------------------------------------*/
@@ -1036,85 +1110,103 @@ form {
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
 }
 
-/* форма обратной связи-----------------------------------------------------------------------------------------------------*/
-.feedback {
+/*карта и форма обратной связи-----------------------------------------------------------------------------------------------------*/
+.map {
+    text-align: right;
+    min-height: 427px;
+    margin-top: 25px;
     position: relative;
-    z-index: 60;
-    float: right;
-    width: 302px;
-    min-height: 305px;
-    margin-top: 100px;
-    margin-right: 26px;
-    margin-bottom: 95px;
-    border-radius: 10px;
-    background-color: #fefefe;
+    background-color: #d5cfb6;
 }
-
-.feedback-text {
-    font-size: 14px;
-    line-height: 20px;
-    box-sizing: border-box;
-    padding-top: 30px;
-    padding-right: 34px;
-    padding-left: 26px;
-    color: #323232;
-}
-
-.feedback p {
-    margin: 0 30px 0 0;
-    padding: 0;
-}
-
-.adress {
-    margin-bottom: 18px;
-    line-height: 24px;
-}
-
-.feedback-text .for-phone {
-    margin-bottom: 6px;
-}
-
-.feedback-text .time {
-    margin-top: 2px;
-}
-
-.phone {
-    line-height: 22px;
-}
-
-.adress, .phone {
-    font-size: 18px;
-    font-weight: 700;
-    color: #323232;
-}
-
-.feedback-btn .contact-feedback {
-    font-weight: 700;
-    line-height: 24px;
+iframe {
     position: absolute;
-    right: 25px;
-    bottom: 30px;
-    left: 25px;
-    box-sizing: border-box;
-    padding: 9px 0 21px 30px;
-    color: #fff;
-    background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
-    background-color: #ea5b3d;
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
-    text-shadow: 0 2px 5px rgba(160,32,11,.76);
-    font-size: 18px;
-    width: 250px;
-    height: 45px;
-    margin-right: 26px;
+    width: 100%;
+    top: -2px;
+    left: 0;
     border: none;
-    border-radius: 100px;
 }
-
-.feedback-btn .contact-feedback, .social-btn {
+.feedback-adress {
     display: inline-block;
     vertical-align: top;
-    text-decoration: none;
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 305px;
+    margin-bottom: 60px;
+    margin-right: 17px;
+    margin-top: 70px;
+    background-color: #fdfefe;
+    border-radius: 15px;
+    padding-left: 20px;
+    text-align: left;
 }
+.feedback-wrap {
+    position: relative;
+    z-index: 30;
+}
+.adress {
+    width: 222px;
+    margin-top: 12px;
+}
+.adress p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+    padding-top: 10px;
+    font-weight: normal;
+    margin: 0;
+}
+.adress b {
+    font-size: 18px;
+    line-height: 24px;
+    color: #323232;
+}
+.order-phone {
+    width: 222px;
+    margin-top: 18px;
+}
+.order-phone p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    font-weight: normal;
+    margin: 0;
+}
+.order-phone b {
+    font-size: 18px;
+    line-height: 24px;
+    color: #323232;
+}
+.feedback-adress .feedback-btn {
+    padding: 10px 27px;
+    border: none;
+    margin-top: 18px;
+    font-size: 16px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: top;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
+    background: #f26843;
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+}
+.feedback-btn:hover {
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px #ac1000;
+    color: #fff;
+}
+.feedback-btn:active {
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 
 /* пагинатор-----------------------------------------------------------------------------------------------------*/
 .paginator {
