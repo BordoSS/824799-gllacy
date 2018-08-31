@@ -1299,7 +1299,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background-image: url("../img/icecream.png");
+  background-image: url("../img/icecream.svg");
   background-repeat: no-repeat;
 }
 
@@ -1313,7 +1313,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background-image: url("../img/eco.png");
+  background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
 }
 
@@ -1327,7 +1327,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background-image: url("../img/cow.png");
+  background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
 }
 
@@ -1341,7 +1341,7 @@ input[type="radio"].visually-hidden {
   width: 49px;
   height: 49px;
 
-  background-image: url("../img/thermometer.png");
+  background-image: url("../img/thermometer.svg");
   background-repeat: no-repeat;
 }
 
