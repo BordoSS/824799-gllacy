@@ -1880,23 +1880,7 @@ input[type="radio"].visually-hidden {
   border-radius: 25px;
 }
 
-.filter-style:hover {
-  font-weight: 500;
-  color: #323232;
 
-  background-image: url("../img/select-arrow-active.png");
-  background-position: 168px 13px;
-  background-repeat: no-repeat;
-  background-size: 11px 10px;
-  border: none;
-  text-indent: 0.01px;
-  -o-text-overflow: "";
-     text-overflow: "";
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-      appearance: none;
-}
 
 .filters legend {
   margin-bottom: 5px;
@@ -1921,6 +1905,24 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-image: url("../img/select-arrow.png");
+  background-position: 168px 13px;
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  border: none;
+  text-indent: 0.01px;
+  -o-text-overflow: "";
+     text-overflow: "";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+      appearance: none;
+}
+
+.filter-sort:hover {
+  font-weight: 500;
+  color: #323232;
+
+  background-image: url("../img/select-arrow-active.png");
   background-position: 168px 13px;
   background-repeat: no-repeat;
   background-size: 11px 10px;
