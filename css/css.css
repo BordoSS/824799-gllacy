@@ -1247,6 +1247,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/ruble.png");
   background-repeat: no-repeat;
+  background-size: 30px 35px;
   background-position: 5px 6px;
 }
 
@@ -1283,7 +1284,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
 
   background-color: #ebdfc5;
-  background-image: url("../img/waffle-background.jpg");
+  background-image: url("../img/waffle-background.png");
   background-size: cover;
   background-position: center center;
   border-radius: 15px;
@@ -1404,7 +1405,7 @@ input[type="radio"].visually-hidden {
   padding: 23px 20px 81px;
 
   background-color: #ffffff;
-  background-image: url("../img/strawberry-background.jpg");
+  background-image: url("../img/strawberry-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -52px -224px;
