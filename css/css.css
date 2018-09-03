@@ -442,6 +442,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/loupe.png");
   background-repeat: no-repeat;
+  background-size: 17px 17px;
   background-position: center center;
 }
 
@@ -528,6 +529,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/entrance.png");
   background-repeat: no-repeat;
+  background-size: 20px 19px;
 }
 
 .sign-in-link:hover::before,
@@ -734,6 +736,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/basket.png");
   background-repeat: no-repeat;
+  background-size: 21px 20px;
 }
 
 /*продукты и inner---------------------------------------------------------------------------*/
@@ -764,6 +767,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/basket-red.png");
   background-repeat: no-repeat;
+  background-size: 21px 20px;
 }
 
 .basket-list {
@@ -1031,14 +1035,16 @@ input[type="radio"].visually-hidden {
   background-color: #78172c;
   background-image: url("../img/raspberry-background.png");
   background-repeat: no-repeat;
-  background-position: -50px -94px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .shares-chocolate {
   background-color: #462b1f;
   background-image: url("../img/chocolate-background.png");
   background-repeat: no-repeat;
-  background-position: -218px -104px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .shares-header {
@@ -1278,6 +1284,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #ebdfc5;
   background-image: url("../img/waffle-background.jpg");
+  background-size: cover;
+  background-position: center center;
   border-radius: 15px;
 }
 
@@ -1327,6 +1335,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/icecream.png");
   background-repeat: no-repeat;
+  background-size: 49px 49px;
 }
 
 .about-leaf::before {
@@ -1341,6 +1350,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/eco.png");
   background-repeat: no-repeat;
+  background-size: 49px 49px;
 }
 
 .about-cow::before {
@@ -1355,6 +1365,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/cow.png");
   background-repeat: no-repeat;
+  background-size: 49px 49px;
 }
 
 .about-thermometer::before {
@@ -1369,6 +1380,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/thermometer.png");
   background-repeat: no-repeat;
+  background-size: 49px 49px;
 }
 
 /*!--блог и подписка---------------------------------------------------------------------------*/
@@ -1393,6 +1405,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: -52px -224px;
   border-radius: 15px;
@@ -1635,18 +1648,26 @@ input[type="radio"].visually-hidden {
 
 .twitter {
   background-image: url("../img/twitter.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
 }
 
 .instagram {
   background-image: url("../img/instagram.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
 }
 
 .facebook {
   background-image: url("../img/fb.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
 }
 
 .vkontakte {
   background-image: url("../img/vk.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
 }
 
 .twitter:hover,
@@ -1706,6 +1727,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/heart.png");
   background-repeat: no-repeat;
+  background-size: 15px 13px;
 }
 
 .footer-navigation-list li:last-child {
@@ -1881,6 +1903,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/select-arrow.png");
   background-position: 168px 13px;
   background-repeat: no-repeat;
+  background-size: 11px 10px;
   border: none;
   text-indent: 0.01px;
   -o-text-overflow: "";
@@ -2078,6 +2101,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
+  background-size: 22px 22px;
 }
 
 .fat-radio:focus + .radio-indicator {
@@ -2086,6 +2110,8 @@ input[type="radio"].visually-hidden {
 
 .fat-radio:checked + .radio-indicator {
   background-image: url("../img/radio-on.png");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
 }
 
 /*!--фильтры-наполнители ---------------------------------------------------------------------------*/
@@ -2111,9 +2137,12 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 .filler-checkbox:checked + .checkbox-indicator {
   background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-size: 24px 20px;
 }
 
 .filler-checkbox:focus + .checkbox-indicator {
@@ -2167,6 +2196,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/next-catalog.png");
   background-repeat: no-repeat;
+  background-size: 8px 12px;
   cursor: pointer;
 }
 
