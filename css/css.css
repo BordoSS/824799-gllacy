@@ -1866,6 +1866,8 @@ input[type="radio"].visually-hidden {
           align-items: center;
 }
 
+
+
 .filter-style {
   margin-right: 15px;
   margin-bottom: 16px;
@@ -1876,6 +1878,24 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
+}
+
+.filter-style:hover {
+  font-weight: 500;
+  color: #323232;
+
+  background-image: url("../img/select-arrow-active.png");
+  background-position: 168px 13px;
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  border: none;
+  text-indent: 0.01px;
+  -o-text-overflow: "";
+     text-overflow: "";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+      appearance: none;
 }
 
 .filters legend {
@@ -1913,6 +1933,7 @@ input[type="radio"].visually-hidden {
   -ms-appearance: none;
       appearance: none;
 }
+
 
 .form-sort select::-ms-expand {
   display: none;
