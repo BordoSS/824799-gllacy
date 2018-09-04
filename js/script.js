@@ -1,18 +1,3 @@
-var catalog_link = document.querySelector(".catalog-link");
-var catalog_popup = document.querySelector(".catalog-navigation");
-
-var search_link = document.querySelector(".search-link");
-var search_popup = document.querySelector(".search-modal");
-
-var signin_link = document.querySelector(".sign-in-link");
-var signin_popup = document.querySelector(".sign-in-modal");
-var signin_form = signin_popup.querySelector("form");
-var email = signin_popup.querySelector("[name=email]");
-var password = signin_popup.querySelector("[name=password]");
-
-var basket_link = document.querySelector(".basket-link");
-var basket_popup = document.querySelector(".basket-list");
-
 var feedback_button = document.querySelector(".feedback-button");
 var feedback_popup = document.querySelector(".feedback-modal-wrapper");
 var feedback_close = document.querySelector(".modal-close");

@@ -397,6 +397,12 @@ input[type="radio"].visually-hidden {
 .catalog-current {
   background-color: #d07058;
 }
+
+.catalog:hover .modal {
+    display: block;
+}
+
+
 /*!--правый хедер---------------------------------------------------------------------------*/
 
 .right-navigation-container {
@@ -488,6 +494,10 @@ input[type="radio"].visually-hidden {
           flex-grow: 1;
 }
 
+.search:hover .modal {
+    display: block;
+}
+
 .user-navigation {
   position: relative;
 
@@ -495,6 +505,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+}
+
+.user-navigation:hover .modal {
+    display: block;
 }
 
 .sign-in-link {
