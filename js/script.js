@@ -6,55 +6,6 @@ var feedback_name = document.querySelector(".feedback-name");
 var feedback_email = document.querySelector(".feedback-email");
 var feedback_textarea = document.querySelector(".feedback-textarea");
 
-catalog_link.addEventListener("mouseenter", function (evt) {
-  catalog_popup.classList.add("modal-show");
-  catalog_link.classList.add("catalog-link-hover");
-});
-
-catalog_popup.addEventListener("mouseleave", function (evt) {
-  catalog_popup.classList.remove("modal-show");
-  catalog_link.classList.remove("catalog-link-hover");
-});
-
-signin_link.addEventListener("mouseenter", function (evt) {
-  signin_popup.classList.add("modal-show");
-  signin_link.classList.add("sign-in-link-hover");
-});
-
-signin_popup.addEventListener("mouseleave", function (evt) {
-  signin_popup.classList.remove("modal-show");
-  signin_link.classList.remove("sign-in-link-hover");
-  signin_popup.classList.remove("modal-error");
-});
-
-signin_form.addEventListener("submit", function (evt) {
-  if (!email.value || !password.value) {
-    evt.preventDefault();
-    signin_popup.classList.remove("modal-error");
-    signin_popup.offsetWidth = signin_popup.offsetWidth;
-    signin_popup.classList.add("modal-error");
-  }
-});
-
-search_link.addEventListener("mouseenter", function (evt) {
-  search_popup.classList.add("modal-show");
-  search_link.classList.add("search-link-hover");
-});
-
-search_popup.addEventListener("mouseleave", function (evt) {
-  search_popup.classList.remove("modal-show");
-  search_link.classList.remove("search-link-hover");
-});
-
-if (basket_popup) {
-  basket_link.addEventListener("mouseenter", function (evt) {
-    basket_popup.classList.add("modal-show");
-});
-
-  basket_popup.addEventListener("mouseleave", function (evt) {
-    basket_popup.classList.remove("modal-show");
-  });
-};
 
 if (feedback_popup) {
   feedback_button.addEventListener("click", function (evt) {
