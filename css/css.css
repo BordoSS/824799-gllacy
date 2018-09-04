@@ -738,6 +738,10 @@ input[type="radio"].visually-hidden {
 
   border-radius: 25px;
 }
+
+.basket:hover .modal {
+    display: block;
+}
 /*продукты и index---------------------------------------------------------------------------*/
 .basket-empty::before {
   content: "";
