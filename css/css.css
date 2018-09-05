@@ -77,8 +77,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+  position: relative;
   display: none;
 }
+
 
 .modal-show {
   display: block;
@@ -283,10 +285,17 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 }
+
 .catalog {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 15px;
 }
+.main-catalog {
+  margin: 0px;
+  padding: 0px;
+}
+
 
 .header-link {
   display: inline-block;
@@ -303,6 +312,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 17px;
   background-repeat: repeat-x;
   background-size: 1px 1px;
+  /* padding-bottom: 10px; */
 }
 
 .header-link:hover,
@@ -341,6 +351,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   list-style: none;
+
 }
 
 .catalog-navigation li {
@@ -405,6 +416,7 @@ input[type="radio"].visually-hidden {
 
 .catalog:hover .modal {
     display: block;
+
 }
 
 
@@ -426,8 +438,7 @@ input[type="radio"].visually-hidden {
 
 .search {
   position: relative;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 15px;
 }
 
 .search-link {
@@ -478,7 +489,7 @@ input[type="radio"].visually-hidden {
 
 .search-form {
   position: absolute;
-  top: 36px;
+  top: 10px;
   right: 10px;
 
   display: -webkit-box;
@@ -512,6 +523,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+  padding-bottom: 15px;
 }
 
 .user-navigation:hover .modal {
@@ -571,7 +583,7 @@ input[type="radio"].visually-hidden {
 
 .sign-in-form {
   position: absolute;
-  top: 36px;
+  top: 14px;
   right: 10px;
   z-index: 10;
 
@@ -733,6 +745,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 15px;
 }
 
 .basket-empty {
