@@ -7,6 +7,7 @@ var feedback_email = document.querySelector(".feedback-email");
 var feedback_textarea = document.querySelector(".feedback-textarea");
 
 
+
 if (feedback_popup) {
   feedback_button.addEventListener("click", function (evt) {
     evt.preventDefault();
