@@ -7,6 +7,8 @@ body {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+
+  min-width: 1200px;
 }
 
 a {
@@ -50,6 +52,7 @@ a {
 .site-container {
   position: relative;
   width: 1200px;
+
   margin-right: auto;
   margin-left: auto;
 }
@@ -1616,15 +1619,15 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-text {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #323232;
 }
 
 .feedback-adress {
   width: 210px;
   margin: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 400;
 }
 
@@ -1637,6 +1640,8 @@ input[type="radio"].visually-hidden {
 
 .address-para {
   margin: 0;
+    margin-bottom: 10px;
+
 }
 
 .address-tel {
@@ -1665,6 +1670,7 @@ input[type="radio"].visually-hidden {
 
 .feedback-button {
   padding: 9px 27px 11px;
+  margin-top: 8px;
 }
 
 .feedback-modal {
