@@ -1002,6 +1002,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -1895,8 +1899,7 @@ cursor: pointer;
 .facebook:active,
 .vkontakte:active {
   border-color: rgba(255, 255, 255, 0.7);
-  -webkit-box-shadow: inset 0px 2px 1px 0px rgb(136, 136, 136);
-          box-shadow: inset 0px 2px 1px 0px rgb(136, 136, 136);
+
 }
 
 .footer-navigation-list {
@@ -1979,6 +1982,7 @@ cursor: pointer;
 .footer-navigation-link:focus,
 .footer-navigation-link:active {
   color: #ffbc9e;
+  text-decoration: underline;
 
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(255, 188, 158, 0.3)), to(transparent));
   background-image: -webkit-linear-gradient(top, rgba(255, 188, 158, 0.3) 100%, transparent 100%);
@@ -2085,7 +2089,6 @@ cursor: pointer;
   margin-right: 15px;
   margin-bottom: 16px;
   padding: 9px 0px;
-
   font-size: 16px;
   font-weight: 500;
 
@@ -2107,9 +2110,10 @@ cursor: pointer;
 /*!--фильтры-сортировка ---------------------------------------------------------------------------*/
 
 .form-sort select {
-  height: 36px;
+  height: 37px;
   width: 193px;
-  padding: 6px 25px 8px 15px;
+  margin-top: 2px;
+  padding: 9px 20px 11px 15px;
 
   font: inherit;
   font-size: 16px;
@@ -2270,13 +2274,16 @@ cursor: pointer;
 }
 
 .filter-fillers {
-  padding-left: 15px;
-  padding-right: 19px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .filter-button {
-  margin-top: 7px;
-  padding: 6px 15px 8px;
+  margin-top: 5px;
+  margin-left: -5px;
+  Width: 146px;
+  height: 37px;
+  padding: 7px 25px 10px;
 
   font: inherit;
   font-weight: 400;
@@ -2284,7 +2291,7 @@ cursor: pointer;
 
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #ffffff;
-  border-radius: 20px;
+  border-radius: 23px;
   cursor: pointer;
 }
 
@@ -2366,7 +2373,7 @@ cursor: pointer;
 .filler-checkbox + .checkbox-indicator {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -2px;
 
   width: 23px;
   height: 20px;
@@ -2469,9 +2476,14 @@ cursor: pointer;
   border-radius: 50%;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a:hover{
   background-color: rgba(255, 255, 255, 0.2)
+}
+
+.pagination-item a:focus {
+  color: #323232;
+
+  background-color: #ffffff;
 }
 
 .pagination-item-current a,
