@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 20px;
   vertical-align: top;
   color: #fefefe;
 
@@ -1382,7 +1382,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 540px;
-  padding: 12px 0 10px 57px;
+  padding: 14px 0 12px 57px;
 
   font-weight: 400;
 }
@@ -1603,41 +1603,62 @@ input[type="radio"].visually-hidden {
 
 .feedback {
   position: absolute;
-  top: 62px;
+  top: 60px;
   left: 871px;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 302px;
-  padding: 27px 25px 31px;
+  padding: 27px 25px 30px;
 
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
-.feedback-text {
+.feedback-text1 {
   margin-bottom: 24px;
   color: #323232;
 }
 
-.feedback-adress {
+.feedback-text2 {
+  margin-bottom: 26px;
+  color: #323232;
+}
+
+.feedback-adress1 {
   width: 210px;
   margin: 0;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 400;
 }
 
-.address-para,
+.feedback-adress2 {
+  width: 210px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 400;
+}
+
+.address-para2,
 .address-tel {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.address-para1 {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.address-para {
+.address-para2 {
   margin: 0;
 }
+
 
 .address-tel {
   color: #323232;
@@ -1649,7 +1670,7 @@ input[type="radio"].visually-hidden {
 .address-unimportant {
   display: block;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 19px;
   font-weight: 400;
 }
 
@@ -1664,7 +1685,11 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-button {
-  padding: 9px 27px 11px;
+    padding-top: 11px;
+    padding-left: 27px;
+    padding-bottom: 12px;
+    padding-right: 25px;
+    line-height: 20px;
 }
 
 .feedback-modal {
