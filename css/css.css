@@ -7,8 +7,6 @@ body {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-
-  min-width: 1200px;
 }
 
 a {
@@ -52,7 +50,6 @@ a {
 .site-container {
   position: relative;
   width: 1200px;
-
   margin-right: auto;
   margin-left: auto;
 }
@@ -218,45 +215,32 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 2px;
-  padding: 10px 27px 0;
-}
 
-.top-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+
+  position: relative;
+  margin-bottom: 2px;
+
   padding: 0;
 }
 
+
+
 .main-header-logo {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   width: 154px;
   height: 64px;
-  margin: 0 9px 0 0;
+  margin-left: 20px;
 }
 
 .navigation-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -266,13 +250,18 @@ input[type="radio"].visually-hidden {
           align-items: flex-start;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 14px 0 0;
+
+  flex-grow: 1;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 35px;
+  padding: 0;
 }
 
 /*!--левый хедер---------------------------------------------------------------------------*/
 
 .main-navigation {
+
   padding: 0;
 }
 
@@ -450,6 +439,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+
   padding: 0;
 }
 
@@ -708,9 +698,9 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 0 0 2px;
+
+
+  margin: 10px 0 5px;
   padding: 0;
   line-height: 16px;
 
@@ -734,18 +724,18 @@ input[type="radio"].visually-hidden {
 }
 
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: absolute;
+
+  right: 0;
+  margin-top: 80px;
+  margin-right: 35px;
   width: 175px;
-  margin: 0;
 
   font-size: 14px;
   line-height: 16px;
@@ -966,14 +956,15 @@ input[type="radio"].visually-hidden {
 /*слайдер---------------------------------------------------------------------------*/
 
 .container {
-  padding: 0 27px;
+  padding: 0 20px;
 }
 
 .slider {
   position: relative;
 
   margin-bottom: 39px;
-  padding-top: 270px;
+  margin-right: 15px;
+  padding-top: 300px;
 
   text-align: center;
   color: #ffffff;
@@ -982,7 +973,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   left: 0;
-  bottom: 22px;
+  bottom: 25px;
   z-index: 20;
 
   font-size: 0;
@@ -1000,10 +991,6 @@ input[type="radio"].visually-hidden {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.slider-controls label:hover {
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-list {
@@ -1076,15 +1063,15 @@ input[type="radio"].visually-hidden {
 }
 
 .shares-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: auto;
+  margin: 0;
+  margin-right: 15px;
   padding: 0;
 
   list-style: none;
@@ -1144,7 +1131,7 @@ input[type="radio"].visually-hidden {
 /*продукты и хиты продаж---------------------------------------------------------------------------*/
 
 .index-products {
-  margin: 0 0 38px;
+  margin: 0 0 35px;
 }
 
 .icecream-list {
@@ -1347,8 +1334,9 @@ input[type="radio"].visually-hidden {
 
 
 .about {
-  margin: 0 0 40px;
-  padding: 24px 21px 15px;
+  margin-bottom: 40px;
+  margin-right: 15px;
+  padding: 32px 20px 15px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1465,7 +1453,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
      -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+  margin-right: 15px;
 }
 
 /*!--блог ---------------------------------------------------------------------------*/
@@ -1593,8 +1582,9 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
 
-  height: 428px;
+  height: 425px;
   margin: 0 -27px 0;
+  margin-bottom: 15px;
 
   background-color: #ece5c8;
   overflow: hidden;
@@ -1623,7 +1613,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-text {
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   color: #323232;
 }
 
@@ -1631,7 +1621,7 @@ input[type="radio"].visually-hidden {
   width: 210px;
   margin: 0;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
   font-weight: 400;
 }
 
@@ -1644,8 +1634,6 @@ input[type="radio"].visually-hidden {
 
 .address-para {
   margin: 0;
-    margin-bottom: 10px;
-
 }
 
 .address-tel {
@@ -1674,7 +1662,6 @@ input[type="radio"].visually-hidden {
 
 .feedback-button {
   padding: 9px 27px 11px;
-  margin-top: 8px;
 }
 
 .feedback-modal {
@@ -1727,7 +1714,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
 
   background-color: transparent;
-  background-image: url("../img/x.svg");
+  background-image: url("../img/Х-big.png");
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -1800,18 +1787,15 @@ cursor: pointer;
 
 /*!--футер ---------------------------------------------------------------------------*/
 .main-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 18px 28px 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex: none;
+  flex-grow: 1;
+  margin-right: 35px;
+  margin-left: 10px;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .left-footer-container {
@@ -1835,7 +1819,8 @@ cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+
+  margin-left: 10px;
   padding: 0;
 
   list-style: none;
@@ -1911,7 +1896,7 @@ cursor: pointer;
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
+
   padding: 0;
 
   list-style: none;
@@ -1928,7 +1913,7 @@ cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 112px;
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 .footer-navigation-list li:first-child::before {
@@ -1982,7 +1967,6 @@ cursor: pointer;
 .footer-navigation-link:focus,
 .footer-navigation-link:active {
   color: #ffbc9e;
-  text-decoration: underline;
 
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(255, 188, 158, 0.3)), to(transparent));
   background-image: -webkit-linear-gradient(top, rgba(255, 188, 158, 0.3) 100%, transparent 100%);
@@ -2089,6 +2073,7 @@ cursor: pointer;
   margin-right: 15px;
   margin-bottom: 16px;
   padding: 9px 0px;
+
   font-size: 16px;
   font-weight: 500;
 
@@ -2110,10 +2095,9 @@ cursor: pointer;
 /*!--фильтры-сортировка ---------------------------------------------------------------------------*/
 
 .form-sort select {
-  height: 37px;
+  height: 36px;
   width: 193px;
-  margin-top: 2px;
-  padding: 9px 20px 11px 15px;
+  padding: 6px 25px 8px 15px;
 
   font: inherit;
   font-size: 16px;
@@ -2274,16 +2258,13 @@ cursor: pointer;
 }
 
 .filter-fillers {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 15px;
+  padding-right: 19px;
 }
 
 .filter-button {
-  margin-top: 5px;
-  margin-left: -5px;
-  Width: 146px;
-  height: 37px;
-  padding: 7px 25px 10px;
+  margin-top: 7px;
+  padding: 6px 25px 8px;
 
   font: inherit;
   font-weight: 400;
@@ -2291,7 +2272,7 @@ cursor: pointer;
 
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid #ffffff;
-  border-radius: 23px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -2357,6 +2338,11 @@ cursor: pointer;
   background-size: 22px 22px;
 }
 
+.fat-radio:disabled + .radio-indicator {
+  background-image: url("../img/radio-on.png");
+  opacity:0.5;
+}
+
 /*!--фильтры-наполнители ---------------------------------------------------------------------------*/
 .filler-label {
   position: relative;
@@ -2373,7 +2359,7 @@ cursor: pointer;
 .filler-checkbox + .checkbox-indicator {
   position: absolute;
   top: 0;
-  left: -2px;
+  left: 0;
 
   width: 23px;
   height: 20px;
@@ -2392,6 +2378,13 @@ cursor: pointer;
   outline: 1px dotted black;
 }
 
+.filler-checkbox:disabled + .checkbox-indicator {
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-size: 24px 20px;
+  opacity:0.5;
+}
+
 /*!--пагинатор ---------------------------------------------------------------------------*/
 .pagination-wrapper {
   display: -webkit-box;
@@ -2399,9 +2392,16 @@ cursor: pointer;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 29px;
+  justify-content: flex-end;
+  padding-bottom: 35px;
+  padding-right: 16px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 100%, transparent 100%);
+  background-position: 0 55px;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
 }
+
+
 
  .pagination-list {
    display: -webkit-box;
@@ -2476,9 +2476,10 @@ cursor: pointer;
   border-radius: 50%;
 }
 
-.pagination-item a:hover{
+.pagination-item a:hover  {
   background-color: rgba(255, 255, 255, 0.2)
 }
+
 
 .pagination-item a:focus {
   color: #323232;
